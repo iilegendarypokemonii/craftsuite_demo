@@ -1,0 +1,371 @@
+{
+ "title": "Signal & Noise 2026",
+ "total_posts": 387,
+ "months": [
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08",
+  "2026-09"
+ ],
+ "themes": [
+  "Agentic coding",
+  "Open-weight models",
+  "Reasoning & test-time compute",
+  "Prices & tokens",
+  "On-device AI",
+  "Regulation & policy",
+  "Benchmarks & evals",
+  "Compute & energy",
+  "Multimodal & voice",
+  "Safety & trust"
+ ],
+ "posts_by_month_theme": [
+  {
+   "month": "2026-01",
+   "Agentic coding": 3,
+   "Open-weight models": 4,
+   "Reasoning & test-time compute": 6,
+   "Prices & tokens": 4,
+   "On-device AI": 2,
+   "Regulation & policy": 2,
+   "Benchmarks & evals": 4,
+   "Compute & energy": 3,
+   "Multimodal & voice": 3,
+   "Safety & trust": 2
+  },
+  {
+   "month": "2026-02",
+   "Agentic coding": 4,
+   "Open-weight models": 4,
+   "Reasoning & test-time compute": 6,
+   "Prices & tokens": 4,
+   "On-device AI": 2,
+   "Regulation & policy": 2,
+   "Benchmarks & evals": 4,
+   "Compute & energy": 4,
+   "Multimodal & voice": 4,
+   "Safety & trust": 2
+  },
+  {
+   "month": "2026-03",
+   "Agentic coding": 4,
+   "Open-weight models": 5,
+   "Reasoning & test-time compute": 5,
+   "Prices & tokens": 4,
+   "On-device AI": 2,
+   "Regulation & policy": 3,
+   "Benchmarks & evals": 4,
+   "Compute & energy": 4,
+   "Multimodal & voice": 4,
+   "Safety & trust": 3
+  },
+  {
+   "month": "2026-04",
+   "Agentic coding": 6,
+   "Open-weight models": 6,
+   "Reasoning & test-time compute": 4,
+   "Prices & tokens": 4,
+   "On-device AI": 2,
+   "Regulation & policy": 3,
+   "Benchmarks & evals": 4,
+   "Compute & energy": 4,
+   "Multimodal & voice": 4,
+   "Safety & trust": 3
+  },
+  {
+   "month": "2026-05",
+   "Agentic coding": 6,
+   "Open-weight models": 6,
+   "Reasoning & test-time compute": 4,
+   "Prices & tokens": 4,
+   "On-device AI": 3,
+   "Regulation & policy": 4,
+   "Benchmarks & evals": 4,
+   "Compute & energy": 4,
+   "Multimodal & voice": 5,
+   "Safety & trust": 4
+  },
+  {
+   "month": "2026-06",
+   "Agentic coding": 8,
+   "Open-weight models": 5,
+   "Reasoning & test-time compute": 4,
+   "Prices & tokens": 4,
+   "On-device AI": 4,
+   "Regulation & policy": 4,
+   "Benchmarks & evals": 3,
+   "Compute & energy": 5,
+   "Multimodal & voice": 5,
+   "Safety & trust": 4
+  },
+  {
+   "month": "2026-07",
+   "Agentic coding": 8,
+   "Open-weight models": 6,
+   "Reasoning & test-time compute": 4,
+   "Prices & tokens": 4,
+   "On-device AI": 4,
+   "Regulation & policy": 6,
+   "Benchmarks & evals": 3,
+   "Compute & energy": 5,
+   "Multimodal & voice": 6,
+   "Safety & trust": 4
+  },
+  {
+   "month": "2026-08",
+   "Agentic coding": 9,
+   "Open-weight models": 6,
+   "Reasoning & test-time compute": 4,
+   "Prices & tokens": 4,
+   "On-device AI": 4,
+   "Regulation & policy": 4,
+   "Benchmarks & evals": 3,
+   "Compute & energy": 6,
+   "Multimodal & voice": 6,
+   "Safety & trust": 4
+  },
+  {
+   "month": "2026-09",
+   "Agentic coding": 10,
+   "Open-weight models": 6,
+   "Reasoning & test-time compute": 3,
+   "Prices & tokens": 4,
+   "On-device AI": 4,
+   "Regulation & policy": 4,
+   "Benchmarks & evals": 3,
+   "Compute & energy": 6,
+   "Multimodal & voice": 6,
+   "Safety & trust": 4
+  }
+ ],
+ "engagement_by_theme": {
+  "Agentic coding": 6399,
+  "Open-weight models": 8589,
+  "Reasoning & test-time compute": 3447,
+  "Prices & tokens": 5887,
+  "On-device AI": 4482,
+  "Regulation & policy": 3289,
+  "Benchmarks & evals": 3622,
+  "Compute & energy": 4261,
+  "Multimodal & voice": 5734,
+  "Safety & trust": 4843
+ },
+ "sentiment_by_theme": {
+  "Agentic coding": {
+   "positive": 28,
+   "neutral": 24,
+   "negative": 6
+  },
+  "Open-weight models": {
+   "positive": 23,
+   "neutral": 15,
+   "negative": 10
+  },
+  "Reasoning & test-time compute": {
+   "positive": 14,
+   "neutral": 21,
+   "negative": 5
+  },
+  "Prices & tokens": {
+   "positive": 11,
+   "neutral": 6,
+   "negative": 19
+  },
+  "On-device AI": {
+   "positive": 12,
+   "neutral": 9,
+   "negative": 6
+  },
+  "Regulation & policy": {
+   "positive": 17,
+   "neutral": 11,
+   "negative": 4
+  },
+  "Benchmarks & evals": {
+   "positive": 16,
+   "neutral": 15,
+   "negative": 1
+  },
+  "Compute & energy": {
+   "positive": 9,
+   "neutral": 15,
+   "negative": 17
+  },
+  "Multimodal & voice": {
+   "positive": 16,
+   "neutral": 19,
+   "negative": 8
+  },
+  "Safety & trust": {
+   "positive": 6,
+   "neutral": 10,
+   "negative": 14
+  }
+ },
+ "posts_by_platform": {
+  "Bluesky": 71,
+  "Reddit": 54,
+  "Mastodon": 70,
+  "Hacker News": 70,
+  "LinkedIn": 53,
+  "Threads": 69
+ },
+ "share_pct_by_month_theme": [
+  {
+   "month": "2026-01",
+   "total": 33,
+   "Agentic coding": 9.1,
+   "Open-weight models": 12.1,
+   "Reasoning & test-time compute": 18.2,
+   "Prices & tokens": 12.1,
+   "On-device AI": 6.1,
+   "Regulation & policy": 6.1,
+   "Benchmarks & evals": 12.1,
+   "Compute & energy": 9.1,
+   "Multimodal & voice": 9.1,
+   "Safety & trust": 6.1
+  },
+  {
+   "month": "2026-02",
+   "total": 36,
+   "Agentic coding": 11.1,
+   "Open-weight models": 11.1,
+   "Reasoning & test-time compute": 16.7,
+   "Prices & tokens": 11.1,
+   "On-device AI": 5.6,
+   "Regulation & policy": 5.6,
+   "Benchmarks & evals": 11.1,
+   "Compute & energy": 11.1,
+   "Multimodal & voice": 11.1,
+   "Safety & trust": 5.6
+  },
+  {
+   "month": "2026-03",
+   "total": 38,
+   "Agentic coding": 10.5,
+   "Open-weight models": 13.2,
+   "Reasoning & test-time compute": 13.2,
+   "Prices & tokens": 10.5,
+   "On-device AI": 5.3,
+   "Regulation & policy": 7.9,
+   "Benchmarks & evals": 10.5,
+   "Compute & energy": 10.5,
+   "Multimodal & voice": 10.5,
+   "Safety & trust": 7.9
+  },
+  {
+   "month": "2026-04",
+   "total": 40,
+   "Agentic coding": 15.0,
+   "Open-weight models": 15.0,
+   "Reasoning & test-time compute": 10.0,
+   "Prices & tokens": 10.0,
+   "On-device AI": 5.0,
+   "Regulation & policy": 7.5,
+   "Benchmarks & evals": 10.0,
+   "Compute & energy": 10.0,
+   "Multimodal & voice": 10.0,
+   "Safety & trust": 7.5
+  },
+  {
+   "month": "2026-05",
+   "total": 44,
+   "Agentic coding": 13.6,
+   "Open-weight models": 13.6,
+   "Reasoning & test-time compute": 9.1,
+   "Prices & tokens": 9.1,
+   "On-device AI": 6.8,
+   "Regulation & policy": 9.1,
+   "Benchmarks & evals": 9.1,
+   "Compute & energy": 9.1,
+   "Multimodal & voice": 11.4,
+   "Safety & trust": 9.1
+  },
+  {
+   "month": "2026-06",
+   "total": 46,
+   "Agentic coding": 17.4,
+   "Open-weight models": 10.9,
+   "Reasoning & test-time compute": 8.7,
+   "Prices & tokens": 8.7,
+   "On-device AI": 8.7,
+   "Regulation & policy": 8.7,
+   "Benchmarks & evals": 6.5,
+   "Compute & energy": 10.9,
+   "Multimodal & voice": 10.9,
+   "Safety & trust": 8.7
+  },
+  {
+   "month": "2026-07",
+   "total": 50,
+   "Agentic coding": 16.0,
+   "Open-weight models": 12.0,
+   "Reasoning & test-time compute": 8.0,
+   "Prices & tokens": 8.0,
+   "On-device AI": 8.0,
+   "Regulation & policy": 12.0,
+   "Benchmarks & evals": 6.0,
+   "Compute & energy": 10.0,
+   "Multimodal & voice": 12.0,
+   "Safety & trust": 8.0
+  },
+  {
+   "month": "2026-08",
+   "total": 50,
+   "Agentic coding": 18.0,
+   "Open-weight models": 12.0,
+   "Reasoning & test-time compute": 8.0,
+   "Prices & tokens": 8.0,
+   "On-device AI": 8.0,
+   "Regulation & policy": 8.0,
+   "Benchmarks & evals": 6.0,
+   "Compute & energy": 12.0,
+   "Multimodal & voice": 12.0,
+   "Safety & trust": 8.0
+  },
+  {
+   "month": "2026-09",
+   "total": 50,
+   "Agentic coding": 20.0,
+   "Open-weight models": 12.0,
+   "Reasoning & test-time compute": 6.0,
+   "Prices & tokens": 8.0,
+   "On-device AI": 8.0,
+   "Regulation & policy": 8.0,
+   "Benchmarks & evals": 6.0,
+   "Compute & energy": 12.0,
+   "Multimodal & voice": 12.0,
+   "Safety & trust": 8.0
+  }
+ ],
+ "share_pct_overall": {
+  "Agentic coding": 15.0,
+  "Open-weight models": 12.4,
+  "Reasoning & test-time compute": 10.3,
+  "Prices & tokens": 9.3,
+  "On-device AI": 7.0,
+  "Regulation & policy": 8.3,
+  "Benchmarks & evals": 8.3,
+  "Compute & energy": 10.6,
+  "Multimodal & voice": 11.1,
+  "Safety & trust": 7.8
+ },
+ "negative_pct_overall": 23.26,
+ "negative_pct_by_theme": {
+  "Agentic coding": 10.34,
+  "Open-weight models": 20.83,
+  "Reasoning & test-time compute": 12.5,
+  "Prices & tokens": 52.78,
+  "On-device AI": 22.22,
+  "Regulation & policy": 12.5,
+  "Benchmarks & evals": 3.12,
+  "Compute & energy": 41.46,
+  "Multimodal & voice": 18.6,
+  "Safety & trust": 46.67
+ }
+}

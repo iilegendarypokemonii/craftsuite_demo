@@ -1,0 +1,129 @@
+{
+ "app": "VectorCraft",
+ "summary": "VectorCraft is a drawing app, like Adobe Illustrator. It stores each drawing as lines and shapes (vector graphics). The drawing stays sharp at every size. Use it for logos, icons, charts and illustrations.",
+ "use_cases": [
+  "Make a chart for a report from a small table of numbers, in your own colours.",
+  "Design a logo or a badge for a club, an event or a small business.",
+  "Export 1 design as PNG for social media, SVG for a website and PDF for print.",
+  "Save the list of steps once. Then make a new chart every month with new numbers."
+ ],
+ "story": "VectorCraft drew the badge and 3 charts for the poster and the slides. Its chart tool drew the share of the conversation per month. It also drew the share of negative posts per theme and the sample by platform. The key themes have strong colours, and the other themes are grey. VectorCraft built the badge from simple shapes, text on a curve, a shadow and a glow. DesignCraft and DeckCraft used these files.",
+ "recipe": [
+  "vectorcraft-cli run --cmd graph.create --params \"$(cat graph.json)\" --export chart.svg --export chart.png",
+  "vectorcraft-cli run --in chart.svg --cmd select.all --cmd type.createOutlines --export chart.pdf",
+  "vectorcraft-cli convert badge.vectorcraft badge.png --scale 2"
+ ],
+ "recipe_note": "Draw a chart from the numbers in graph.json. Change its text to shapes for print. Export the badge at 2 times its size.",
+ "assets": [
+  {
+   "file": "vc_share_chart.png",
+   "kind": "image",
+   "caption": "Agentic coding grew from 9% to 20% of the conversation. Reasoning & test-time compute fell from 18% to 6%.",
+   "description": "VectorCraft's own chart tool drew this line chart from the monthly shares. Then VectorCraft coloured the 2 key lines, made the other 8 themes grey and added the end values.",
+   "made_with_app": true,
+   "how": "vectorcraft-cli run (steps from _work/vectorcraft/charts2.py): --cmd file.new --cmd graph.create {type:line, series, categories, rows from summary.json} --cmd graph.setType {axisMin:0, axisMax:25, suffix:\"%\", legend:false} --cmd document.find {name:<series>, kind:Group} --cmd paint.setFill / paint.setStroke / stroke.set {ids:[\"$N.matches.0.id\"]} --cmd text.setStyle (axis labels) --cmd text.create / shape.ellipse / path.create (value labels, end dots, average line) --export X.png --export X.svg --export X.pdf --export X.vectorcraft --scale 2"
+  },
+  {
+   "file": "vc_share_chart.svg",
+   "kind": "image",
+   "caption": "VectorCraft also saved the line chart as an SVG file.",
+   "description": "VectorCraft exported the SVG file in the same step as the PNG. The file stays sharp at every size. It opens in a web browser.",
+   "made_with_app": true,
+   "how": "same run as vc_share_chart.png: --export vc_share_chart.svg"
+  },
+  {
+   "file": "vc_share_chart.pdf",
+   "kind": "document",
+   "caption": "VectorCraft also saved the line chart as a PDF file for print.",
+   "description": "VectorCraft exported the same chart as a PDF in the same step. The PDF stays sharp in print.",
+   "made_with_app": true,
+   "how": "same run as vc_share_chart.png: --export vc_share_chart.pdf"
+  },
+  {
+   "file": "vc_share_chart.vectorcraft",
+   "kind": "project",
+   "caption": "This is the editable VectorCraft file of the line chart.",
+   "description": "When you change the numbers, VectorCraft draws the lines again.",
+   "made_with_app": true,
+   "how": "same run as vc_share_chart.png: --export vc_share_chart.vectorcraft"
+  },
+  {
+   "file": "vc_negative_chart.png",
+   "kind": "image",
+   "caption": "53% of Prices & tokens posts were negative. The average for all themes is 23%.",
+   "description": "VectorCraft's chart tool drew these bars from the share of negative posts per theme. VectorCraft coloured the 3 most negative themes and added a dashed line at the 23% average.",
+   "made_with_app": true,
+   "how": "vectorcraft-cli run (steps from _work/vectorcraft/charts2.py): --cmd file.new --cmd graph.create {type:stackedBar (3 series with blank cells, for 3 colour groups), series, categories, rows from summary.json} --cmd graph.setType {axisMin:0, axisMax:60, suffix:\"%\", legend:false} --cmd document.find {name:<series>, kind:Group} --cmd paint.setFill / paint.setStroke / stroke.set {ids:[\"$N.matches.0.id\"]} --cmd text.setStyle (axis labels) --cmd text.create / shape.ellipse / path.create (value labels, end dots, average line) --export X.png --export X.svg --export X.pdf --export X.vectorcraft --scale 2"
+  },
+  {
+   "file": "vc_negative_chart.svg",
+   "kind": "image",
+   "hidden": true,
+   "caption": "VectorCraft also saved the bar chart as an SVG file.",
+   "description": "VectorCraft exported the same bar chart as SVG in the same step.",
+   "made_with_app": true,
+   "how": "same run as vc_negative_chart.png: --export vc_negative_chart.svg"
+  },
+  {
+   "file": "vc_negative_chart.pdf",
+   "kind": "document",
+   "hidden": true,
+   "caption": "VectorCraft also saved the bar chart as a PDF file.",
+   "description": "VectorCraft exported the same bar chart as a PDF in the same step.",
+   "made_with_app": true,
+   "how": "same run as vc_negative_chart.png: --export vc_negative_chart.pdf"
+  },
+  {
+   "file": "vc_negative_chart.vectorcraft",
+   "kind": "project",
+   "hidden": true,
+   "caption": "This is the editable VectorCraft file of the bar chart.",
+   "description": "You can change the numbers later.",
+   "made_with_app": true,
+   "how": "same run as vc_negative_chart.png: --export vc_negative_chart.vectorcraft"
+  },
+  {
+   "file": "vc_platforms_share.png",
+   "kind": "image",
+   "caption": "Each of the 6 platforms gave 14% to 18% of the posts in the sample.",
+   "description": "VectorCraft's chart tool drew this pie chart. Each slice has 1 of the study colours. The legend shows the share of each platform.",
+   "made_with_app": true,
+   "how": "vectorcraft-cli run (charts2.py pie_small): --cmd graph.create {type:pie, series:\"<platform>  <share>%\", rows} --cmd paint.setFill/paint.setStroke per series --cmd text.setStyle --export vc_platforms_share.png --scale 2"
+  },
+  {
+   "file": "vc_badge.png",
+   "kind": "image",
+   "caption": "The Signal & Noise 2026 badge shows a noisy line that becomes a smooth wave.",
+   "description": "VectorCraft built this badge from a list of steps, with no other tool. It uses a star, circles, text on a curve, a shadow and a glow. No picture came from outside the app.",
+   "made_with_app": true,
+   "how": "vectorcraft-cli run (steps from _work/vectorcraft/logo.py): shape.star {points:40} + effect.apply stylize.dropShadow; shape.ellipse x3 + object.pathfinder.minusFront (ring); path.create + text.createInPath {mode:onPath}; path.create + effect.apply distort.roughen (noise); path.create + effect.apply stylize.outerGlow (signal); text.create + type.createOutlines (2026); --export vc_badge.png/.svg/.pdf/.vectorcraft --scale 1.5"
+  },
+  {
+   "file": "vc_badge.svg",
+   "kind": "image",
+   "caption": "VectorCraft also saved the badge as an SVG file.",
+   "description": "VectorCraft exported the badge as SVG in the same step. Use it on a website at any size.",
+   "made_with_app": true,
+   "how": "same run as vc_badge.png: --export vc_badge.svg"
+  },
+  {
+   "file": "vc_badge.pdf",
+   "kind": "document",
+   "hidden": true,
+   "caption": "VectorCraft also saved the badge as a PDF file.",
+   "description": "VectorCraft exported the badge as a PDF in the same step.",
+   "made_with_app": true,
+   "how": "same run as vc_badge.png: --export vc_badge.pdf"
+  },
+  {
+   "file": "vc_badge.vectorcraft",
+   "kind": "project",
+   "hidden": true,
+   "caption": "This is the editable VectorCraft file of the badge.",
+   "description": "The file keeps the shadow and the glow as live effects. You can change them later.",
+   "made_with_app": true,
+   "how": "same run as vc_badge.png: --export vc_badge.vectorcraft"
+  }
+ ],
+ "headless_notes": "All files come from vectorcraft-cli run without a window. The mcp command was not used. graph.create drew every chart from the numbers in summary.json. Series colours go on the series group, and the graph keeps them. On a line chart, a fill on the series group also fills the line, so the script removes that fill. The chart tool has no data labels, so text.create added the end values at calculated positions. A probe run read the object ids for the label style; the ids stay the same for the same steps. The poster and deck charts use the same steps. They hide the title and use a smaller artboard."
+}

@@ -1,0 +1,86 @@
+{
+ "app": "WordCraft",
+ "summary": "WordCraft is a word processor, like Microsoft Word. It reads and writes .docx files. It can also work from typed commands.",
+ "use_cases": [
+  "Make a weekly status report from a list of steps. The headings, table and charts have the same style each time.",
+  "Convert a folder of Word files to PDF in 1 step.",
+  "Make page previews (PNG) of a document for a website or a chat message.",
+  "Start from a template and add the new numbers each month."
+ ],
+ "story": "WordCraft built and formatted the 4-page report. It typed every heading, paragraph and bullet point. It also formatted the share table. It placed 2 GridCraft charts as figures with captions. It added a footer with page numbers and a note that the data is invented. Then it exported the PDF that PdfCraft used.",
+ "recipe": [
+  "wordcraft-cli run --cmd 'para.style={\"style\":\"Title\"}' --cmd 'text.insert={\"text\":\"Signal & Noise 2026\"}' … --save findings.docx",
+  "wordcraft-cli convert findings.docx findings.pdf",
+  "wordcraft-cli render findings.docx page-1.png --page 1 --scale 1.5"
+ ],
+ "recipe_note": "Type and style the report from a list of steps. Save it as PDF. Make a picture of page 1.",
+ "assets": [
+  {
+   "file": "wordcraft-page-1.png",
+   "kind": "image",
+   "caption": "Page 1 gives the summary of the findings and the method.",
+   "description": "WordCraft drew this page image itself, from the .docx file.",
+   "made_with_app": true,
+   "how": "wordcraft-cli render signal-noise-2026-findings.docx wordcraft-page-1.png --page 1 --scale 1.5"
+  },
+  {
+   "file": "wordcraft-page-2.png",
+   "kind": "image",
+   "caption": "Page 2 shows the share of the conversation by theme and the GridCraft line chart.",
+   "description": "WordCraft drew this page image from the .docx file. The table and the chart stay where WordCraft placed them.",
+   "made_with_app": true,
+   "how": "wordcraft-cli render signal-noise-2026-findings.docx wordcraft-page-2.png --page 2 --scale 1.5"
+  },
+  {
+   "file": "wordcraft-pages-overview.png",
+   "kind": "image",
+   "caption": "This image shows all 4 pages of the report side by side.",
+   "description": "WordCraft drew each page. A short Python script placed the 4 images side by side.",
+   "made_with_app": false,
+   "how": "The 4 WordCraft page renders, placed side by side with PIL"
+  },
+  {
+   "file": "signal-noise-2026-findings.docx",
+   "kind": "project",
+   "caption": "The Word document has 4 pages, 6 findings, 1 table and 2 charts.",
+   "description": "WordCraft ran a list of 364 steps. WordCraft typed, styled and arranged the full report.",
+   "made_with_app": true,
+   "how": "wordcraft-cli run --cmd 'styles.modify={...}' --cmd 'text.insert={...}' ... (364 commands) --save signal-noise-2026-findings.docx. Made with run --cmd, not converted from Markdown or HTML."
+  },
+  {
+   "file": "signal-noise-2026-findings.pdf",
+   "kind": "document",
+   "caption": "WordCraft also saved the findings report as a PDF file.",
+   "description": "WordCraft converted its own .docx file to PDF in 1 step.",
+   "made_with_app": true,
+   "how": "wordcraft-cli convert signal-noise-2026-findings.docx signal-noise-2026-findings.pdf"
+  },
+  {
+   "file": "wordcraft-page-3.png",
+   "kind": "image",
+   "caption": "Page 3 shows 5 of the 6 findings and the chart of negative posts per theme.",
+   "description": "WordCraft drew this page image itself, from the .docx file.",
+   "made_with_app": true,
+   "how": "wordcraft-cli render signal-noise-2026-findings.docx wordcraft-page-3.png --page 3 --scale 1.5"
+  },
+  {
+   "file": "wordcraft-page-4.png",
+   "kind": "image",
+   "caption": "Page 4 shows finding 6, the platforms, the limitations and the next steps.",
+   "description": "WordCraft drew this page image itself, from the .docx file.",
+   "made_with_app": true,
+   "how": "wordcraft-cli render signal-noise-2026-findings.docx wordcraft-page-4.png --page 4 --scale 1.5",
+   "hidden": true
+  },
+  {
+   "file": "wordcraft-build-commands.txt",
+   "kind": "document",
+   "caption": "This list holds the 364 steps that WordCraft did to write the report.",
+   "description": "A small Python program wrote this list. WordCraft did each step in order, like a person who uses the menus.",
+   "made_with_app": false,
+   "how": "Written by a Python helper (build_report.py); passed as --cmd arguments to wordcraft-cli run",
+   "hidden": true
+  }
+ ],
+ "headless_notes": "All work ran through wordcraft-cli with no window: run, convert, render, info and text. After insert.picture, the new picture stays selected, so the steps move the caret to the end first. After insert.footer, the caret stays in the footer, so the footer comes last. Formatting at the caret goes into the next paragraphs. The bold and grey text came last, with select.text. A page break inside a heading made a blank page, so the report uses widow control instead. Colours use the form {\"Rgb\":[r,g,b]}."
+}

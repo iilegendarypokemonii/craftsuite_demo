@@ -1,0 +1,52 @@
+{
+ "app": "DesignCraft",
+ "summary": "DesignCraft is a page layout app, like Adobe InDesign. You put text, pictures and charts on pages. Then you export the pages as PDF or images.",
+ "use_cases": [
+  "Make a 1-page poster or flyer for an event.",
+  "Put a chart and 3 key numbers on a social media card.",
+  "Design a newsletter or a small magazine with several pages.",
+  "Make 100 name badges from 1 spreadsheet. DesignCraft puts 1 row of the spreadsheet on each badge."
+ ],
+ "story": "DesignCraft made a 2-page poster in social media format (1080 × 1350 pixels). Page 1 shows 4 key numbers and the share of the conversation over 9 months. Page 2 shows which themes had the most negative posts. The charts and the badge came from VectorCraft.",
+ "recipe": [
+  "designcraft-cli script poster.dcs --save poster.designcraft",
+  "designcraft-cli run --in poster.designcraft --scale 1 --all-pages pages/",
+  "designcraft-cli run --in poster.designcraft --export poster.pdf"
+ ],
+ "recipe_note": "Run the list of steps in poster.dcs. Export every page as a PNG image. Export all pages as 1 PDF.",
+ "assets": [
+  {
+   "file": "signal-noise-poster-p1.png",
+   "kind": "image",
+   "caption": "Poster page 1 shows 4 key numbers and the share of the conversation, Jan–Sep 2026.",
+   "description": "DesignCraft put the title, the badge, 4 number cards, the VectorCraft line chart and 3 short findings on the page. Then it exported the page as a PNG image.",
+   "made_with_app": true,
+   "how": "designcraft-cli script poster.dcs --save poster.designcraft (197 commands from _work/designcraft/poster.py: file.new {width:1080, height:1350, pages:2}, swatch.create, frame.create, object.fill, object.cornerOptions, text.select + type.char + type.para, object.textFrameOptions, file.place {path:<VectorCraft PNG>}); designcraft-cli run --in poster.designcraft --scale 1 --all-pages pages/"
+  },
+  {
+   "file": "signal-noise-poster-p2.png",
+   "kind": "image",
+   "caption": "Poster page 2 shows that 53% of Prices & tokens posts were negative. The average is 23%.",
+   "description": "DesignCraft put 3 items on page 2: the VectorCraft bar chart, a large 53% box and the platform pie chart. Then it exported the page as a PNG image.",
+   "made_with_app": true,
+   "how": "designcraft-cli script poster.dcs --save poster.designcraft (197 commands from _work/designcraft/poster.py: file.new {width:1080, height:1350, pages:2}, swatch.create, frame.create, object.fill, object.cornerOptions, text.select + type.char + type.para, object.textFrameOptions, file.place {path:<VectorCraft PNG>}); designcraft-cli run --in poster.designcraft --scale 1 --all-pages pages/"
+  },
+  {
+   "file": "signal-noise-poster.pdf",
+   "kind": "document",
+   "caption": "Both poster pages are in 1 PDF file.",
+   "description": "DesignCraft exported both pages to 1 PDF. The text stays sharp. You can select and copy it.",
+   "made_with_app": true,
+   "how": "designcraft-cli run --in poster.designcraft --export poster.pdf"
+  },
+  {
+   "file": "signal-noise-poster.designcraft",
+   "kind": "project",
+   "caption": "This is the editable DesignCraft file, with the pictures inside.",
+   "description": "Open the file to change the text or to move the boxes on the page.",
+   "made_with_app": true,
+   "how": "designcraft-cli script poster.dcs --save poster.designcraft"
+  }
+ ],
+ "headless_notes": "script and run worked without a window, and without --connect. Text colour must be a swatch name, so the script makes the palette swatches first. A raw hex colour gave invisible text. The bundled Inter font has only a Regular style, so the poster uses Segoe UI for bold text. A text frame that is too short hides its text, so each frame has room for its line height. The --page option counts from 0. vectorcraft-cli convert made a test image of the PDF for a visual check."
+}

@@ -1,0 +1,28 @@
+# Text that PdfCraft extracted from page 2 of signal-noise-2026-dossier.pdf (illustrative, synthetic data)
+Signal & Noise 2026 — findings
+How social media talked about LLMs, Jan–Sep 2026 · Northbank Media Lab 
+research desk
+Illustrative report. All numbers come from a synthetic sample of 387 fictional posts. The report quotes no real people and 
+describes no real product releases.
+Summary
+Agentic coding is now the main topic in the LLM conversation. Its share of the conversation grew 
+from 9% in January to 20% in September. Reasoning & test-time compute fell from 18% to 6%. The 
+focus moved from how models think to what models do.
+• Agentic coding grew most: 9% of the conversation in January, 20% in September. It is the 
+largest theme, with 15% of all posts.
+• Reasoning & test-time compute fell: 18% to 6%. It went from the largest theme to one of 
+the smallest.
+• Benchmarks & evals also fell: 12% to 6%.
+• Three themes grew slowly: Compute & energy and Multimodal & voice each went from 9% 
+to 12%. On-device AI went from 6% to 8%.
+• Prices & tokens is the most negative theme: 53% of its posts are negative. That is more 
+than twice the 23% average.
+• Regulation & policy peaked in July: 12% of the conversation.
+Sample and method
+The sample has 387 hand-coded posts from 6 platforms. The sample represents a much larger 
+stream of posts. Each post has 1 of 10 themes and 1 sentiment label: positive, neutral or negative.
+• Share of the conversation: the percentage of a month's posts that have a given theme.
+• % negative: the percentage of a theme's posts that have a negative label.
+• Tools: GridCraft calculated all percentages with COUNTIFS formulas. WordCraft typed and 
+formatted this report.
+Signal & Noise 2026 · illustrative report, synthetic sample of 387 posts · page 1

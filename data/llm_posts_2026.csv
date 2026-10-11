@@ -1,0 +1,388 @@
+post_id,date,month,platform,author,theme,sentiment,likes,reposts,replies,text
+P0001,2026-01-01,2026-01,Bluesky,@researcher_353,Prices & tokens,positive,512,36,84,Per-token prices dropped again. Our bill went up anyway because we use ten times more.
+P0002,2026-01-03,2026-01,LinkedIn,@researcher_872,Benchmarks & evals,positive,12,3,1,Started publishing our eval prompts with results. Much better conversations since.
+P0003,2026-01-04,2026-01,Mastodon,@researcher_715,Agentic coding,neutral,77,5,5,"Hot take: the real product is the test suite, the agent just fills it in."
+P0004,2026-01-04,2026-01,LinkedIn,@researcher_761,Compute & energy,negative,144,41,25,"GPU waitlists are shorter this year, power contracts are the new bottleneck."
+P0005,2026-01-04,2026-01,Threads,@researcher_421,Multimodal & voice,positive,19,4,0,Generated video got good enough that we now watermark all our own footage.
+P0006,2026-01-07,2026-01,Hacker News,@researcher_264,Benchmarks & evals,neutral,84,15,16,Started publishing our eval prompts with results. Much better conversations since.
+P0007,2026-01-07,2026-01,LinkedIn,@researcher_546,Multimodal & voice,positive,27,2,2,Voice mode is how my parents use AI now. No typing at all.
+P0008,2026-01-08,2026-01,Bluesky,@researcher_315,Agentic coding,neutral,41,9,5,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0009,2026-01-09,2026-01,Mastodon,@researcher_568,Open-weight models,negative,22,4,1,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0010,2026-01-09,2026-01,Hacker News,@researcher_593,Benchmarks & evals,neutral,151,25,12,"Benchmark scores up, our internal task success flat. Classic."
+P0011,2026-01-10,2026-01,Bluesky,@researcher_619,On-device AI,neutral,33,8,4,On-device models finally good enough for note summaries. Privacy team is happy.
+P0012,2026-01-11,2026-01,Hacker News,@researcher_320,Safety & trust,negative,132,37,11,"Users trust answers more when the model shows its sources. Obvious, but measurable."
+P0013,2026-01-13,2026-01,Reddit,@researcher_126,On-device AI,neutral,20,2,3,Ran a capable assistant fully offline on a laptop on a train. Felt like the future for a minute.
+P0014,2026-01-14,2026-01,LinkedIn,@researcher_260,Compute & energy,negative,411,119,36,"GPU waitlists are shorter this year, power contracts are the new bottleneck."
+P0015,2026-01-14,2026-01,Bluesky,@researcher_978,Safety & trust,positive,34,2,4,Prompt injection through web pages is our number one incident category now.
+P0016,2026-01-15,2026-01,Threads,@researcher_535,Reasoning & test-time compute,neutral,194,54,11,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0017,2026-01-16,2026-01,Bluesky,@researcher_249,Prices & tokens,negative,200,19,35,Cost dashboards for LLM usage are the new cloud-cost dashboards.
+P0018,2026-01-17,2026-01,Mastodon,@researcher_937,Open-weight models,negative,74,14,11,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0019,2026-01-17,2026-01,Hacker News,@researcher_685,Regulation & policy,positive,40,3,7,Transparency rules for AI-generated content are changing how we label posts.
+P0020,2026-01-18,2026-01,Hacker News,@researcher_700,Agentic coding,neutral,90,21,14,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0021,2026-01-18,2026-01,Threads,@researcher_681,Compute & energy,neutral,71,16,8,Interesting to see energy use per query showing up in vendor docs.
+P0022,2026-01-19,2026-01,LinkedIn,@researcher_602,Open-weight models,neutral,17,4,2,Fine-tuned an open-weight model on our support tickets over a weekend. Good enough to ship internally.
+P0023,2026-01-19,2026-01,Bluesky,@researcher_895,Multimodal & voice,positive,43,2,4,Generated video got good enough that we now watermark all our own footage.
+P0024,2026-01-20,2026-01,Bluesky,@researcher_887,Prices & tokens,negative,87,11,11,Cost dashboards for LLM usage are the new cloud-cost dashboards.
+P0025,2026-01-21,2026-01,Threads,@researcher_192,Open-weight models,neutral,7,0,0,Fine-tuned an open-weight model on our support tickets over a weekend. Good enough to ship internally.
+P0026,2026-01-21,2026-01,Threads,@researcher_673,Reasoning & test-time compute,neutral,31,9,3,Reasoning modes help on maths and planning; for plain summaries they mostly add latency.
+P0027,2026-01-22,2026-01,Mastodon,@researcher_307,Reasoning & test-time compute,neutral,153,38,15,Reasoning modes help on maths and planning; for plain summaries they mostly add latency.
+P0028,2026-01-23,2026-01,LinkedIn,@researcher_334,Reasoning & test-time compute,negative,10,1,1,Paying for 'thinking time' per request is a strange new line item on our invoice.
+P0029,2026-01-23,2026-01,Threads,@researcher_809,Prices & tokens,negative,77,6,10,"Cheap small models for routing, expensive ones only when needed. Saved us 60% this quarter."
+P0030,2026-01-25,2026-01,Hacker News,@researcher_931,Reasoning & test-time compute,negative,194,50,16,Paying for 'thinking time' per request is a strange new line item on our invoice.
+P0031,2026-01-26,2026-01,Reddit,@researcher_794,Regulation & policy,positive,70,9,9,Transparency rules for AI-generated content are changing how we label posts.
+P0032,2026-01-27,2026-01,Mastodon,@researcher_577,Reasoning & test-time compute,positive,209,20,30,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0033,2026-01-28,2026-01,Reddit,@researcher_452,Benchmarks & evals,positive,53,3,4,Leaderboards saturate within months. We trust our own eval set more than any public chart.
+P0034,2026-02-01,2026-02,LinkedIn,@researcher_489,Reasoning & test-time compute,positive,279,53,53,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0035,2026-02-02,2026-02,Reddit,@researcher_778,Multimodal & voice,neutral,68,19,7,Generated video got good enough that we now watermark all our own footage.
+P0036,2026-02-03,2026-02,Reddit,@researcher_425,Open-weight models,neutral,68,14,10,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0037,2026-02-04,2026-02,Mastodon,@researcher_610,On-device AI,neutral,39,8,3,Ran a capable assistant fully offline on a laptop on a train. Felt like the future for a minute.
+P0038,2026-02-05,2026-02,Hacker News,@researcher_248,Benchmarks & evals,positive,155,40,16,Started publishing our eval prompts with results. Much better conversations since.
+P0039,2026-02-05,2026-02,Bluesky,@researcher_624,Safety & trust,neutral,16,2,1,"Users trust answers more when the model shows its sources. Obvious, but measurable."
+P0040,2026-02-06,2026-02,LinkedIn,@researcher_409,Agentic coding,positive,12,2,2,"Handed a whole refactor to a coding agent this week. It finished, but reviewing the diff took longer than writing it would have."
+P0041,2026-02-06,2026-02,LinkedIn,@researcher_905,Open-weight models,positive,150,28,27,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0042,2026-02-06,2026-02,Threads,@researcher_635,Reasoning & test-time compute,neutral,64,8,12,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0043,2026-02-06,2026-02,Bluesky,@researcher_952,Compute & energy,neutral,99,19,13,"GPU waitlists are shorter this year, power contracts are the new bottleneck."
+P0044,2026-02-08,2026-02,Bluesky,@researcher_741,Open-weight models,positive,75,21,4,"Licensing on open-weight models is getting more confusing, not less."
+P0045,2026-02-10,2026-02,Mastodon,@researcher_225,Agentic coding,positive,38,8,6,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0046,2026-02-10,2026-02,Bluesky,@researcher_377,Multimodal & voice,neutral,208,39,10,Generated video got good enough that we now watermark all our own footage.
+P0047,2026-02-11,2026-02,Threads,@researcher_986,Benchmarks & evals,neutral,65,6,7,Started publishing our eval prompts with results. Much better conversations since.
+P0048,2026-02-11,2026-02,Mastodon,@researcher_759,Multimodal & voice,positive,62,8,4,Generated video got good enough that we now watermark all our own footage.
+P0049,2026-02-12,2026-02,Mastodon,@researcher_419,Reasoning & test-time compute,neutral,45,12,6,Paying for 'thinking time' per request is a strange new line item on our invoice.
+P0050,2026-02-12,2026-02,Mastodon,@researcher_772,Benchmarks & evals,neutral,154,13,24,Started publishing our eval prompts with results. Much better conversations since.
+P0051,2026-02-13,2026-02,Mastodon,@researcher_777,Safety & trust,neutral,18,1,2,"Users trust answers more when the model shows its sources. Obvious, but measurable."
+P0052,2026-02-14,2026-02,LinkedIn,@researcher_893,Open-weight models,positive,52,12,7,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0053,2026-02-14,2026-02,Bluesky,@researcher_857,Reasoning & test-time compute,neutral,21,4,1,Paying for 'thinking time' per request is a strange new line item on our invoice.
+P0054,2026-02-15,2026-02,Hacker News,@researcher_357,Agentic coding,negative,528,140,77,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0055,2026-02-17,2026-02,Threads,@researcher_855,Prices & tokens,negative,24,4,1,"Cheap small models for routing, expensive ones only when needed. Saved us 60% this quarter."
+P0056,2026-02-18,2026-02,LinkedIn,@researcher_170,Regulation & policy,positive,17,4,1,Compliance teams are reading model cards now. That's new.
+P0057,2026-02-21,2026-02,Bluesky,@researcher_650,Prices & tokens,negative,22,5,3,Per-token prices dropped again. Our bill went up anyway because we use ten times more.
+P0058,2026-02-21,2026-02,Bluesky,@researcher_354,On-device AI,negative,22,4,2,Ran a capable assistant fully offline on a laptop on a train. Felt like the future for a minute.
+P0059,2026-02-21,2026-02,Mastodon,@researcher_122,Benchmarks & evals,positive,26,4,2,Started publishing our eval prompts with results. Much better conversations since.
+P0060,2026-02-22,2026-02,Bluesky,@researcher_254,Reasoning & test-time compute,neutral,41,4,4,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0061,2026-02-22,2026-02,Reddit,@researcher_293,Prices & tokens,positive,30,4,5,"Cheap small models for routing, expensive ones only when needed. Saved us 60% this quarter."
+P0062,2026-02-23,2026-02,Mastodon,@researcher_967,Compute & energy,negative,27,7,4,Interesting to see energy use per query showing up in vendor docs.
+P0063,2026-02-23,2026-02,Reddit,@researcher_274,Multimodal & voice,neutral,45,7,5,"Screenshots in, structured data out. Multimodal quietly replaced half our OCR pipeline."
+P0064,2026-02-24,2026-02,LinkedIn,@researcher_783,Prices & tokens,positive,45,2,2,"Cheap small models for routing, expensive ones only when needed. Saved us 60% this quarter."
+P0065,2026-02-25,2026-02,Hacker News,@researcher_838,Agentic coding,positive,301,40,37,"Handed a whole refactor to a coding agent this week. It finished, but reviewing the diff took longer than writing it would have."
+P0066,2026-02-26,2026-02,Hacker News,@researcher_675,Regulation & policy,neutral,20,1,2,"Spent the morning on an AI-use register for our org. Boring, necessary."
+P0067,2026-02-27,2026-02,Threads,@researcher_509,Compute & energy,negative,70,14,2,Interesting to see energy use per query showing up in vendor docs.
+P0068,2026-02-28,2026-02,Hacker News,@researcher_981,Reasoning & test-time compute,neutral,21,3,1,Paying for 'thinking time' per request is a strange new line item on our invoice.
+P0069,2026-02-28,2026-02,Hacker News,@researcher_180,Compute & energy,neutral,26,3,3,Interesting to see energy use per query showing up in vendor docs.
+P0070,2026-03-04,2026-03,Hacker News,@researcher_127,On-device AI,neutral,101,8,8,Ran a capable assistant fully offline on a laptop on a train. Felt like the future for a minute.
+P0071,2026-03-04,2026-03,LinkedIn,@researcher_213,Benchmarks & evals,positive,39,3,3,Leaderboards saturate within months. We trust our own eval set more than any public chart.
+P0072,2026-03-05,2026-03,Hacker News,@researcher_737,Open-weight models,positive,252,55,25,Fine-tuned an open-weight model on our support tickets over a weekend. Good enough to ship internally.
+P0073,2026-03-05,2026-03,Mastodon,@researcher_344,Regulation & policy,negative,13,2,0,Transparency rules for AI-generated content are changing how we label posts.
+P0074,2026-03-05,2026-03,Threads,@researcher_191,Multimodal & voice,neutral,19,1,3,"Screenshots in, structured data out. Multimodal quietly replaced half our OCR pipeline."
+P0075,2026-03-06,2026-03,Bluesky,@researcher_810,Benchmarks & evals,positive,193,36,6,"Benchmark scores up, our internal task success flat. Classic."
+P0076,2026-03-06,2026-03,Threads,@researcher_365,Compute & energy,positive,32,6,3,Every second local news item here is about a new data centre and the grid.
+P0077,2026-03-06,2026-03,Mastodon,@researcher_780,Safety & trust,negative,159,26,7,Prompt injection through web pages is our number one incident category now.
+P0078,2026-03-07,2026-03,Hacker News,@researcher_994,Agentic coding,neutral,73,18,5,"Hot take: the real product is the test suite, the agent just fills it in."
+P0079,2026-03-07,2026-03,Mastodon,@researcher_316,Reasoning & test-time compute,neutral,9,1,0,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0080,2026-03-07,2026-03,Bluesky,@researcher_308,Reasoning & test-time compute,neutral,30,6,1,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0081,2026-03-10,2026-03,Threads,@researcher_467,Prices & tokens,neutral,65,16,8,Cost dashboards for LLM usage are the new cloud-cost dashboards.
+P0082,2026-03-11,2026-03,Hacker News,@researcher_278,Agentic coding,positive,47,13,8,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0083,2026-03-11,2026-03,Reddit,@researcher_363,Reasoning & test-time compute,neutral,12,2,2,Reasoning modes help on maths and planning; for plain summaries they mostly add latency.
+P0084,2026-03-11,2026-03,Mastodon,@researcher_270,Benchmarks & evals,neutral,294,40,52,Started publishing our eval prompts with results. Much better conversations since.
+P0085,2026-03-12,2026-03,Reddit,@researcher_191,Compute & energy,neutral,61,3,5,"GPU waitlists are shorter this year, power contracts are the new bottleneck."
+P0086,2026-03-13,2026-03,LinkedIn,@researcher_579,Prices & tokens,negative,101,29,4,Cost dashboards for LLM usage are the new cloud-cost dashboards.
+P0087,2026-03-13,2026-03,Bluesky,@researcher_442,On-device AI,positive,164,38,28,Battery life is the real benchmark for phone-side models.
+P0088,2026-03-14,2026-03,Reddit,@researcher_749,Prices & tokens,negative,269,50,14,Cost dashboards for LLM usage are the new cloud-cost dashboards.
+P0089,2026-03-16,2026-03,Reddit,@researcher_730,Open-weight models,neutral,158,47,15,"Licensing on open-weight models is getting more confusing, not less."
+P0090,2026-03-16,2026-03,Reddit,@researcher_471,Reasoning & test-time compute,positive,107,24,11,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0091,2026-03-16,2026-03,Threads,@researcher_705,Multimodal & voice,neutral,84,11,13,Voice mode is how my parents use AI now. No typing at all.
+P0092,2026-03-18,2026-03,Reddit,@researcher_162,Open-weight models,positive,104,26,14,"Licensing on open-weight models is getting more confusing, not less."
+P0093,2026-03-18,2026-03,Bluesky,@researcher_516,Open-weight models,positive,83,6,12,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0094,2026-03-18,2026-03,LinkedIn,@researcher_563,Prices & tokens,negative,45,2,5,"Cheap small models for routing, expensive ones only when needed. Saved us 60% this quarter."
+P0095,2026-03-19,2026-03,Hacker News,@researcher_346,Regulation & policy,neutral,54,8,2,Transparency rules for AI-generated content are changing how we label posts.
+P0096,2026-03-21,2026-03,Reddit,@researcher_991,Multimodal & voice,neutral,84,9,14,"Screenshots in, structured data out. Multimodal quietly replaced half our OCR pipeline."
+P0097,2026-03-21,2026-03,Mastodon,@researcher_796,Safety & trust,neutral,50,6,7,"Users trust answers more when the model shows its sources. Obvious, but measurable."
+P0098,2026-03-22,2026-03,LinkedIn,@researcher_634,Agentic coding,neutral,34,2,3,"Hot take: the real product is the test suite, the agent just fills it in."
+P0099,2026-03-22,2026-03,LinkedIn,@researcher_385,Multimodal & voice,positive,23,4,2,"Screenshots in, structured data out. Multimodal quietly replaced half our OCR pipeline."
+P0100,2026-03-23,2026-03,Threads,@researcher_154,Compute & energy,neutral,78,14,8,Interesting to see energy use per query showing up in vendor docs.
+P0101,2026-03-25,2026-03,Bluesky,@researcher_330,Reasoning & test-time compute,positive,52,13,3,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0102,2026-03-25,2026-03,Reddit,@researcher_727,Safety & trust,negative,67,5,3,"Users trust answers more when the model shows its sources. Obvious, but measurable."
+P0103,2026-03-26,2026-03,Hacker News,@researcher_186,Benchmarks & evals,neutral,8,1,1,"Benchmark scores up, our internal task success flat. Classic."
+P0104,2026-03-27,2026-03,LinkedIn,@researcher_398,Compute & energy,negative,142,30,15,Every second local news item here is about a new data centre and the grid.
+P0105,2026-03-28,2026-03,LinkedIn,@researcher_574,Agentic coding,neutral,53,10,3,"Handed a whole refactor to a coding agent this week. It finished, but reviewing the diff took longer than writing it would have."
+P0106,2026-03-28,2026-03,Bluesky,@researcher_809,Open-weight models,positive,9,0,1,Fine-tuned an open-weight model on our support tickets over a weekend. Good enough to ship internally.
+P0107,2026-03-28,2026-03,Mastodon,@researcher_702,Regulation & policy,neutral,63,10,10,"Spent the morning on an AI-use register for our org. Boring, necessary."
+P0108,2026-04-01,2026-04,Hacker News,@researcher_887,Agentic coding,neutral,60,8,4,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0109,2026-04-01,2026-04,Hacker News,@researcher_349,Open-weight models,neutral,11,1,2,"Licensing on open-weight models is getting more confusing, not less."
+P0110,2026-04-02,2026-04,Bluesky,@researcher_567,Benchmarks & evals,positive,19,5,2,Leaderboards saturate within months. We trust our own eval set more than any public chart.
+P0111,2026-04-03,2026-04,Mastodon,@researcher_977,Prices & tokens,negative,71,9,4,Per-token prices dropped again. Our bill went up anyway because we use ten times more.
+P0112,2026-04-04,2026-04,Mastodon,@researcher_311,Benchmarks & evals,neutral,6,1,0,Leaderboards saturate within months. We trust our own eval set more than any public chart.
+P0113,2026-04-05,2026-04,Hacker News,@researcher_454,Reasoning & test-time compute,neutral,79,15,4,Paying for 'thinking time' per request is a strange new line item on our invoice.
+P0114,2026-04-05,2026-04,Hacker News,@researcher_533,Reasoning & test-time compute,neutral,5,0,0,Paying for 'thinking time' per request is a strange new line item on our invoice.
+P0115,2026-04-05,2026-04,Hacker News,@researcher_479,Compute & energy,negative,74,17,5,Interesting to see energy use per query showing up in vendor docs.
+P0116,2026-04-06,2026-04,Mastodon,@researcher_101,Regulation & policy,negative,42,3,5,Compliance teams are reading model cards now. That's new.
+P0117,2026-04-06,2026-04,Reddit,@researcher_471,Safety & trust,positive,41,4,5,We added a human sign-off step for every agent action that spends money.
+P0118,2026-04-07,2026-04,Reddit,@researcher_393,Safety & trust,negative,40,7,5,"Users trust answers more when the model shows its sources. Obvious, but measurable."
+P0119,2026-04-08,2026-04,Reddit,@researcher_555,Open-weight models,neutral,35,5,4,Fine-tuned an open-weight model on our support tickets over a weekend. Good enough to ship internally.
+P0120,2026-04-08,2026-04,Threads,@researcher_357,On-device AI,negative,72,8,8,Battery life is the real benchmark for phone-side models.
+P0121,2026-04-10,2026-04,Reddit,@researcher_748,Agentic coding,neutral,31,3,1,"Hot take: the real product is the test suite, the agent just fills it in."
+P0122,2026-04-11,2026-04,Reddit,@researcher_178,Multimodal & voice,neutral,93,7,10,Generated video got good enough that we now watermark all our own footage.
+P0123,2026-04-12,2026-04,Hacker News,@researcher_912,Benchmarks & evals,neutral,244,30,47,Leaderboards saturate within months. We trust our own eval set more than any public chart.
+P0124,2026-04-13,2026-04,Reddit,@researcher_455,Agentic coding,neutral,31,9,4,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0125,2026-04-13,2026-04,Threads,@researcher_698,Regulation & policy,positive,19,2,2,"Spent the morning on an AI-use register for our org. Boring, necessary."
+P0126,2026-04-13,2026-04,Bluesky,@researcher_410,Multimodal & voice,negative,13,1,0,"Screenshots in, structured data out. Multimodal quietly replaced half our OCR pipeline."
+P0127,2026-04-14,2026-04,LinkedIn,@researcher_751,Reasoning & test-time compute,positive,27,2,3,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0128,2026-04-14,2026-04,Threads,@researcher_692,Prices & tokens,positive,124,19,16,Cost dashboards for LLM usage are the new cloud-cost dashboards.
+P0129,2026-04-15,2026-04,Hacker News,@researcher_538,Prices & tokens,positive,56,16,5,"Cheap small models for routing, expensive ones only when needed. Saved us 60% this quarter."
+P0130,2026-04-15,2026-04,Mastodon,@researcher_704,On-device AI,neutral,151,34,24,On-device models finally good enough for note summaries. Privacy team is happy.
+P0131,2026-04-18,2026-04,Bluesky,@researcher_990,Safety & trust,negative,25,4,4,We added a human sign-off step for every agent action that spends money.
+P0132,2026-04-19,2026-04,Hacker News,@researcher_933,Open-weight models,positive,28,4,2,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0133,2026-04-19,2026-04,Hacker News,@researcher_591,Benchmarks & evals,positive,138,18,10,Leaderboards saturate within months. We trust our own eval set more than any public chart.
+P0134,2026-04-20,2026-04,LinkedIn,@researcher_513,Agentic coding,positive,13,2,2,"Handed a whole refactor to a coding agent this week. It finished, but reviewing the diff took longer than writing it would have."
+P0135,2026-04-20,2026-04,LinkedIn,@researcher_473,Prices & tokens,negative,8,1,1,Per-token prices dropped again. Our bill went up anyway because we use ten times more.
+P0136,2026-04-20,2026-04,LinkedIn,@researcher_572,Regulation & policy,positive,133,20,13,Transparency rules for AI-generated content are changing how we label posts.
+P0137,2026-04-20,2026-04,Hacker News,@researcher_100,Multimodal & voice,neutral,50,10,2,Generated video got good enough that we now watermark all our own footage.
+P0138,2026-04-21,2026-04,Hacker News,@researcher_675,Open-weight models,neutral,138,34,16,Fine-tuned an open-weight model on our support tickets over a weekend. Good enough to ship internally.
+P0139,2026-04-21,2026-04,Bluesky,@researcher_449,Reasoning & test-time compute,neutral,3,0,0,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0140,2026-04-22,2026-04,LinkedIn,@researcher_334,Compute & energy,neutral,84,6,15,Every second local news item here is about a new data centre and the grid.
+P0141,2026-04-22,2026-04,Hacker News,@researcher_649,Compute & energy,positive,21,2,3,Every second local news item here is about a new data centre and the grid.
+P0142,2026-04-23,2026-04,Bluesky,@researcher_497,Compute & energy,negative,114,22,17,Every second local news item here is about a new data centre and the grid.
+P0143,2026-04-24,2026-04,Mastodon,@researcher_272,Agentic coding,positive,133,16,11,"Handed a whole refactor to a coding agent this week. It finished, but reviewing the diff took longer than writing it would have."
+P0144,2026-04-25,2026-04,Bluesky,@researcher_254,Multimodal & voice,neutral,56,13,6,Voice mode is how my parents use AI now. No typing at all.
+P0145,2026-04-26,2026-04,Threads,@researcher_638,Open-weight models,negative,90,26,14,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0146,2026-04-27,2026-04,Hacker News,@researcher_623,Open-weight models,positive,1070,289,204,Fine-tuned an open-weight model on our support tickets over a weekend. Good enough to ship internally.
+P0147,2026-04-28,2026-04,Threads,@researcher_760,Agentic coding,neutral,35,5,4,"Hot take: the real product is the test suite, the agent just fills it in."
+P0148,2026-05-01,2026-05,Mastodon,@researcher_958,Agentic coding,positive,91,10,17,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0149,2026-05-01,2026-05,Threads,@researcher_188,Regulation & policy,positive,203,29,32,"Spent the morning on an AI-use register for our org. Boring, necessary."
+P0150,2026-05-01,2026-05,Threads,@researcher_762,Multimodal & voice,neutral,95,13,17,Voice mode is how my parents use AI now. No typing at all.
+P0151,2026-05-02,2026-05,LinkedIn,@researcher_565,Agentic coding,positive,37,10,2,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0152,2026-05-02,2026-05,Threads,@researcher_708,On-device AI,positive,262,16,41,Ran a capable assistant fully offline on a laptop on a train. Felt like the future for a minute.
+P0153,2026-05-03,2026-05,Threads,@researcher_623,Reasoning & test-time compute,positive,15,3,2,Reasoning modes help on maths and planning; for plain summaries they mostly add latency.
+P0154,2026-05-04,2026-05,Mastodon,@researcher_801,Open-weight models,positive,45,5,2,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0155,2026-05-04,2026-05,Bluesky,@researcher_758,Open-weight models,neutral,71,10,11,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0156,2026-05-07,2026-05,Hacker News,@researcher_225,Benchmarks & evals,positive,19,5,2,"Benchmark scores up, our internal task success flat. Classic."
+P0157,2026-05-07,2026-05,LinkedIn,@researcher_656,Safety & trust,negative,48,2,2,Prompt injection through web pages is our number one incident category now.
+P0158,2026-05-08,2026-05,Mastodon,@researcher_274,Prices & tokens,negative,19,1,1,"Cheap small models for routing, expensive ones only when needed. Saved us 60% this quarter."
+P0159,2026-05-09,2026-05,Hacker News,@researcher_500,Prices & tokens,neutral,74,8,2,Per-token prices dropped again. Our bill went up anyway because we use ten times more.
+P0160,2026-05-10,2026-05,Mastodon,@researcher_653,Agentic coding,positive,108,10,6,"Handed a whole refactor to a coding agent this week. It finished, but reviewing the diff took longer than writing it would have."
+P0161,2026-05-10,2026-05,Reddit,@researcher_578,Multimodal & voice,neutral,21,3,2,"Screenshots in, structured data out. Multimodal quietly replaced half our OCR pipeline."
+P0162,2026-05-12,2026-05,Bluesky,@researcher_970,Regulation & policy,positive,32,3,1,"Spent the morning on an AI-use register for our org. Boring, necessary."
+P0163,2026-05-14,2026-05,Hacker News,@researcher_760,Open-weight models,negative,46,7,2,Fine-tuned an open-weight model on our support tickets over a weekend. Good enough to ship internally.
+P0164,2026-05-14,2026-05,Reddit,@researcher_711,Open-weight models,positive,47,4,5,"Licensing on open-weight models is getting more confusing, not less."
+P0165,2026-05-14,2026-05,Hacker News,@researcher_397,Reasoning & test-time compute,negative,22,6,3,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0166,2026-05-14,2026-05,Threads,@researcher_579,Multimodal & voice,negative,323,92,53,Generated video got good enough that we now watermark all our own footage.
+P0167,2026-05-15,2026-05,Threads,@researcher_510,On-device AI,neutral,252,17,12,Ran a capable assistant fully offline on a laptop on a train. Felt like the future for a minute.
+P0168,2026-05-15,2026-05,Bluesky,@researcher_905,Regulation & policy,neutral,169,28,29,"Spent the morning on an AI-use register for our org. Boring, necessary."
+P0169,2026-05-16,2026-05,Threads,@researcher_360,Agentic coding,neutral,92,12,11,"Hot take: the real product is the test suite, the agent just fills it in."
+P0170,2026-05-16,2026-05,Reddit,@researcher_615,On-device AI,negative,15,1,1,On-device models finally good enough for note summaries. Privacy team is happy.
+P0171,2026-05-16,2026-05,Bluesky,@researcher_241,Regulation & policy,positive,16,1,0,"Spent the morning on an AI-use register for our org. Boring, necessary."
+P0172,2026-05-18,2026-05,Bluesky,@researcher_600,Benchmarks & evals,positive,214,42,39,Leaderboards saturate within months. We trust our own eval set more than any public chart.
+P0173,2026-05-18,2026-05,LinkedIn,@researcher_648,Multimodal & voice,neutral,73,5,3,Voice mode is how my parents use AI now. No typing at all.
+P0174,2026-05-19,2026-05,Hacker News,@researcher_800,Compute & energy,positive,73,8,7,Interesting to see energy use per query showing up in vendor docs.
+P0175,2026-05-20,2026-05,Mastodon,@researcher_116,Prices & tokens,neutral,73,13,3,"Cheap small models for routing, expensive ones only when needed. Saved us 60% this quarter."
+P0176,2026-05-20,2026-05,Threads,@researcher_852,Benchmarks & evals,positive,103,20,11,Leaderboards saturate within months. We trust our own eval set more than any public chart.
+P0177,2026-05-21,2026-05,LinkedIn,@researcher_876,Open-weight models,positive,20,1,2,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0178,2026-05-22,2026-05,Mastodon,@researcher_604,Agentic coding,neutral,82,21,10,"Hot take: the real product is the test suite, the agent just fills it in."
+P0179,2026-05-22,2026-05,Hacker News,@researcher_504,Benchmarks & evals,neutral,46,12,1,Leaderboards saturate within months. We trust our own eval set more than any public chart.
+P0180,2026-05-22,2026-05,LinkedIn,@researcher_821,Compute & energy,negative,20,5,3,Interesting to see energy use per query showing up in vendor docs.
+P0181,2026-05-23,2026-05,Reddit,@researcher_686,Compute & energy,neutral,273,23,45,Every second local news item here is about a new data centre and the grid.
+P0182,2026-05-23,2026-05,Bluesky,@researcher_279,Safety & trust,negative,8,1,1,We added a human sign-off step for every agent action that spends money.
+P0183,2026-05-24,2026-05,Mastodon,@researcher_986,Prices & tokens,neutral,8,0,0,Per-token prices dropped again. Our bill went up anyway because we use ten times more.
+P0184,2026-05-25,2026-05,Threads,@researcher_926,Reasoning & test-time compute,negative,36,8,5,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0185,2026-05-25,2026-05,Threads,@researcher_402,Safety & trust,neutral,86,9,4,Prompt injection through web pages is our number one incident category now.
+P0186,2026-05-26,2026-05,Threads,@researcher_590,Agentic coding,positive,42,9,4,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0187,2026-05-27,2026-05,Reddit,@researcher_546,Open-weight models,neutral,40,6,4,"Licensing on open-weight models is getting more confusing, not less."
+P0188,2026-05-27,2026-05,Mastodon,@researcher_933,Compute & energy,positive,65,11,12,"GPU waitlists are shorter this year, power contracts are the new bottleneck."
+P0189,2026-05-27,2026-05,Bluesky,@researcher_473,Multimodal & voice,positive,109,29,10,"Screenshots in, structured data out. Multimodal quietly replaced half our OCR pipeline."
+P0190,2026-05-28,2026-05,Mastodon,@researcher_416,Reasoning & test-time compute,neutral,24,2,3,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0191,2026-05-28,2026-05,Mastodon,@researcher_922,Safety & trust,negative,219,13,32,We added a human sign-off step for every agent action that spends money.
+P0192,2026-06-01,2026-06,Reddit,@researcher_316,Agentic coding,positive,84,6,9,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0193,2026-06-01,2026-06,Bluesky,@researcher_391,Benchmarks & evals,positive,225,31,30,"Benchmark scores up, our internal task success flat. Classic."
+P0194,2026-06-01,2026-06,Bluesky,@researcher_883,Compute & energy,neutral,7,1,0,Interesting to see energy use per query showing up in vendor docs.
+P0195,2026-06-01,2026-06,LinkedIn,@researcher_439,Compute & energy,negative,25,5,1,Interesting to see energy use per query showing up in vendor docs.
+P0196,2026-06-03,2026-06,Reddit,@researcher_736,Safety & trust,neutral,81,12,7,"Users trust answers more when the model shows its sources. Obvious, but measurable."
+P0197,2026-06-04,2026-06,LinkedIn,@researcher_751,Agentic coding,positive,86,25,8,"Handed a whole refactor to a coding agent this week. It finished, but reviewing the diff took longer than writing it would have."
+P0198,2026-06-04,2026-06,Bluesky,@researcher_712,Reasoning & test-time compute,neutral,223,25,21,Reasoning modes help on maths and planning; for plain summaries they mostly add latency.
+P0199,2026-06-05,2026-06,Bluesky,@researcher_164,Prices & tokens,negative,559,66,42,Cost dashboards for LLM usage are the new cloud-cost dashboards.
+P0200,2026-06-06,2026-06,Reddit,@researcher_843,Prices & tokens,positive,442,67,38,"Cheap small models for routing, expensive ones only when needed. Saved us 60% this quarter."
+P0201,2026-06-06,2026-06,Mastodon,@researcher_814,Regulation & policy,positive,32,3,1,"Spent the morning on an AI-use register for our org. Boring, necessary."
+P0202,2026-06-07,2026-06,LinkedIn,@researcher_595,Open-weight models,neutral,301,27,36,Fine-tuned an open-weight model on our support tickets over a weekend. Good enough to ship internally.
+P0203,2026-06-07,2026-06,Mastodon,@researcher_364,Benchmarks & evals,positive,36,8,6,"Benchmark scores up, our internal task success flat. Classic."
+P0204,2026-06-08,2026-06,Reddit,@researcher_669,Agentic coding,neutral,22,3,2,"Hot take: the real product is the test suite, the agent just fills it in."
+P0205,2026-06-08,2026-06,LinkedIn,@researcher_600,Regulation & policy,positive,116,22,18,Compliance teams are reading model cards now. That's new.
+P0206,2026-06-08,2026-06,Threads,@researcher_901,Safety & trust,positive,32,4,4,"Users trust answers more when the model shows its sources. Obvious, but measurable."
+P0207,2026-06-10,2026-06,Threads,@researcher_432,Agentic coding,positive,44,11,5,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0208,2026-06-10,2026-06,LinkedIn,@researcher_686,Reasoning & test-time compute,positive,75,16,13,Reasoning modes help on maths and planning; for plain summaries they mostly add latency.
+P0209,2026-06-12,2026-06,Threads,@researcher_602,Regulation & policy,positive,205,17,12,"Spent the morning on an AI-use register for our org. Boring, necessary."
+P0210,2026-06-13,2026-06,Mastodon,@researcher_325,Open-weight models,negative,15,2,1,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0211,2026-06-14,2026-06,Reddit,@researcher_980,Agentic coding,negative,108,22,6,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0212,2026-06-14,2026-06,LinkedIn,@researcher_299,Agentic coding,positive,26,2,1,"Hot take: the real product is the test suite, the agent just fills it in."
+P0213,2026-06-14,2026-06,LinkedIn,@researcher_696,Multimodal & voice,positive,60,13,1,Generated video got good enough that we now watermark all our own footage.
+P0214,2026-06-15,2026-06,Bluesky,@researcher_391,Open-weight models,positive,12,2,1,"Licensing on open-weight models is getting more confusing, not less."
+P0215,2026-06-16,2026-06,Threads,@researcher_974,Multimodal & voice,positive,133,31,16,Voice mode is how my parents use AI now. No typing at all.
+P0216,2026-06-19,2026-06,Threads,@researcher_167,Multimodal & voice,positive,205,18,28,"Screenshots in, structured data out. Multimodal quietly replaced half our OCR pipeline."
+P0217,2026-06-20,2026-06,Threads,@researcher_382,Open-weight models,negative,19,3,1,"Licensing on open-weight models is getting more confusing, not less."
+P0218,2026-06-20,2026-06,Hacker News,@researcher_280,Prices & tokens,positive,76,11,2,"Cheap small models for routing, expensive ones only when needed. Saved us 60% this quarter."
+P0219,2026-06-20,2026-06,LinkedIn,@researcher_867,Multimodal & voice,positive,48,12,8,Voice mode is how my parents use AI now. No typing at all.
+P0220,2026-06-21,2026-06,LinkedIn,@researcher_283,Multimodal & voice,neutral,83,22,13,Voice mode is how my parents use AI now. No typing at all.
+P0221,2026-06-22,2026-06,Threads,@researcher_505,Agentic coding,positive,55,13,5,"Handed a whole refactor to a coding agent this week. It finished, but reviewing the diff took longer than writing it would have."
+P0222,2026-06-22,2026-06,Reddit,@researcher_822,Open-weight models,positive,144,37,6,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0223,2026-06-22,2026-06,Bluesky,@researcher_183,Safety & trust,negative,95,15,18,Prompt injection through web pages is our number one incident category now.
+P0224,2026-06-23,2026-06,Hacker News,@researcher_954,On-device AI,negative,59,7,8,Ran a capable assistant fully offline on a laptop on a train. Felt like the future for a minute.
+P0225,2026-06-24,2026-06,Hacker News,@researcher_576,Regulation & policy,neutral,91,8,16,Compliance teams are reading model cards now. That's new.
+P0226,2026-06-24,2026-06,Bluesky,@researcher_656,Benchmarks & evals,positive,146,19,26,Leaderboards saturate within months. We trust our own eval set more than any public chart.
+P0227,2026-06-24,2026-06,Threads,@researcher_459,Compute & energy,neutral,86,5,12,"GPU waitlists are shorter this year, power contracts are the new bottleneck."
+P0228,2026-06-25,2026-06,Hacker News,@researcher_215,On-device AI,positive,224,22,30,On-device models finally good enough for note summaries. Privacy team is happy.
+P0229,2026-06-25,2026-06,Threads,@researcher_689,Compute & energy,negative,12,0,0,Interesting to see energy use per query showing up in vendor docs.
+P0230,2026-06-25,2026-06,Mastodon,@researcher_452,Safety & trust,positive,164,16,5,Prompt injection through web pages is our number one incident category now.
+P0231,2026-06-26,2026-06,Bluesky,@researcher_975,Reasoning & test-time compute,negative,62,9,4,Paying for 'thinking time' per request is a strange new line item on our invoice.
+P0232,2026-06-26,2026-06,Reddit,@researcher_610,Prices & tokens,positive,13,1,0,"Cheap small models for routing, expensive ones only when needed. Saved us 60% this quarter."
+P0233,2026-06-27,2026-06,Reddit,@researcher_921,Agentic coding,positive,105,29,15,"Hot take: the real product is the test suite, the agent just fills it in."
+P0234,2026-06-27,2026-06,Hacker News,@researcher_518,Reasoning & test-time compute,positive,38,10,3,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0235,2026-06-27,2026-06,Mastodon,@researcher_599,Compute & energy,negative,46,3,4,"GPU waitlists are shorter this year, power contracts are the new bottleneck."
+P0236,2026-06-28,2026-06,Mastodon,@researcher_756,On-device AI,positive,123,26,12,On-device models finally good enough for note summaries. Privacy team is happy.
+P0237,2026-06-28,2026-06,Reddit,@researcher_174,On-device AI,positive,365,91,24,Ran a capable assistant fully offline on a laptop on a train. Felt like the future for a minute.
+P0238,2026-07-01,2026-07,Threads,@researcher_843,Open-weight models,positive,205,37,37,"Licensing on open-weight models is getting more confusing, not less."
+P0239,2026-07-01,2026-07,Bluesky,@researcher_434,Open-weight models,neutral,37,7,2,Fine-tuned an open-weight model on our support tickets over a weekend. Good enough to ship internally.
+P0240,2026-07-01,2026-07,Threads,@researcher_605,Benchmarks & evals,positive,12,1,0,Started publishing our eval prompts with results. Much better conversations since.
+P0241,2026-07-01,2026-07,LinkedIn,@researcher_380,Compute & energy,positive,52,8,2,"GPU waitlists are shorter this year, power contracts are the new bottleneck."
+P0242,2026-07-02,2026-07,Mastodon,@researcher_239,Multimodal & voice,neutral,29,2,4,Voice mode is how my parents use AI now. No typing at all.
+P0243,2026-07-03,2026-07,LinkedIn,@researcher_536,Agentic coding,neutral,140,8,25,"Hot take: the real product is the test suite, the agent just fills it in."
+P0244,2026-07-04,2026-07,Hacker News,@researcher_521,Agentic coding,neutral,136,18,15,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0245,2026-07-04,2026-07,Mastodon,@researcher_890,Reasoning & test-time compute,neutral,66,6,6,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0246,2026-07-05,2026-07,Hacker News,@researcher_369,Regulation & policy,positive,33,6,2,"Spent the morning on an AI-use register for our org. Boring, necessary."
+P0247,2026-07-07,2026-07,Reddit,@researcher_427,Reasoning & test-time compute,neutral,13,3,0,Paying for 'thinking time' per request is a strange new line item on our invoice.
+P0248,2026-07-07,2026-07,Reddit,@researcher_785,Safety & trust,negative,49,11,4,Prompt injection through web pages is our number one incident category now.
+P0249,2026-07-08,2026-07,Bluesky,@researcher_947,Prices & tokens,neutral,56,5,10,Per-token prices dropped again. Our bill went up anyway because we use ten times more.
+P0250,2026-07-08,2026-07,Reddit,@researcher_731,Regulation & policy,neutral,138,30,6,Compliance teams are reading model cards now. That's new.
+P0251,2026-07-08,2026-07,Hacker News,@researcher_587,Safety & trust,neutral,119,15,9,"Users trust answers more when the model shows its sources. Obvious, but measurable."
+P0252,2026-07-10,2026-07,Hacker News,@researcher_885,Reasoning & test-time compute,positive,37,8,3,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0253,2026-07-10,2026-07,Mastodon,@researcher_694,Multimodal & voice,negative,935,102,96,"Screenshots in, structured data out. Multimodal quietly replaced half our OCR pipeline."
+P0254,2026-07-11,2026-07,Bluesky,@researcher_461,Open-weight models,positive,5,1,0,Fine-tuned an open-weight model on our support tickets over a weekend. Good enough to ship internally.
+P0255,2026-07-11,2026-07,Hacker News,@researcher_336,Regulation & policy,neutral,103,12,12,Compliance teams are reading model cards now. That's new.
+P0256,2026-07-11,2026-07,Reddit,@researcher_310,Compute & energy,neutral,270,50,8,Every second local news item here is about a new data centre and the grid.
+P0257,2026-07-11,2026-07,Bluesky,@researcher_467,Multimodal & voice,negative,238,35,37,"Screenshots in, structured data out. Multimodal quietly replaced half our OCR pipeline."
+P0258,2026-07-11,2026-07,Hacker News,@researcher_594,Multimodal & voice,positive,258,20,33,Generated video got good enough that we now watermark all our own footage.
+P0259,2026-07-13,2026-07,Bluesky,@researcher_806,Agentic coding,neutral,42,3,4,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0260,2026-07-13,2026-07,Mastodon,@researcher_788,Safety & trust,negative,1604,232,97,"Users trust answers more when the model shows its sources. Obvious, but measurable."
+P0261,2026-07-15,2026-07,Bluesky,@researcher_553,Benchmarks & evals,neutral,27,5,3,Leaderboards saturate within months. We trust our own eval set more than any public chart.
+P0262,2026-07-16,2026-07,Hacker News,@researcher_304,Open-weight models,positive,156,32,5,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0263,2026-07-16,2026-07,Hacker News,@researcher_113,Prices & tokens,positive,24,2,4,Cost dashboards for LLM usage are the new cloud-cost dashboards.
+P0264,2026-07-16,2026-07,Mastodon,@researcher_924,Regulation & policy,positive,34,9,2,Transparency rules for AI-generated content are changing how we label posts.
+P0265,2026-07-17,2026-07,Threads,@researcher_812,Agentic coding,neutral,85,10,14,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0266,2026-07-17,2026-07,Mastodon,@researcher_566,Open-weight models,positive,53,12,9,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0267,2026-07-17,2026-07,Bluesky,@researcher_900,Prices & tokens,negative,135,32,10,Cost dashboards for LLM usage are the new cloud-cost dashboards.
+P0268,2026-07-18,2026-07,Hacker News,@researcher_253,On-device AI,positive,207,60,18,Ran a capable assistant fully offline on a laptop on a train. Felt like the future for a minute.
+P0269,2026-07-19,2026-07,Bluesky,@researcher_853,Reasoning & test-time compute,positive,93,26,6,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0270,2026-07-20,2026-07,Threads,@researcher_188,Multimodal & voice,positive,285,57,19,Generated video got good enough that we now watermark all our own footage.
+P0271,2026-07-21,2026-07,Mastodon,@researcher_382,Agentic coding,neutral,18,4,1,"Hot take: the real product is the test suite, the agent just fills it in."
+P0272,2026-07-23,2026-07,Hacker News,@researcher_666,Agentic coding,positive,36,7,3,"Handed a whole refactor to a coding agent this week. It finished, but reviewing the diff took longer than writing it would have."
+P0273,2026-07-23,2026-07,Threads,@researcher_840,Open-weight models,negative,208,35,25,Fine-tuned an open-weight model on our support tickets over a weekend. Good enough to ship internally.
+P0274,2026-07-24,2026-07,LinkedIn,@researcher_454,On-device AI,negative,33,4,1,Ran a capable assistant fully offline on a laptop on a train. Felt like the future for a minute.
+P0275,2026-07-25,2026-07,Reddit,@researcher_634,Regulation & policy,positive,110,27,13,Compliance teams are reading model cards now. That's new.
+P0276,2026-07-25,2026-07,Hacker News,@researcher_322,Compute & energy,positive,104,22,14,Interesting to see energy use per query showing up in vendor docs.
+P0277,2026-07-25,2026-07,Bluesky,@researcher_228,Safety & trust,neutral,58,3,10,We added a human sign-off step for every agent action that spends money.
+P0278,2026-07-26,2026-07,Reddit,@researcher_647,Agentic coding,neutral,233,47,33,"Handed a whole refactor to a coding agent this week. It finished, but reviewing the diff took longer than writing it would have."
+P0279,2026-07-26,2026-07,Threads,@researcher_794,On-device AI,neutral,97,26,4,Battery life is the real benchmark for phone-side models.
+P0280,2026-07-26,2026-07,Threads,@researcher_340,On-device AI,positive,24,7,2,On-device models finally good enough for note summaries. Privacy team is happy.
+P0281,2026-07-26,2026-07,Mastodon,@researcher_127,Compute & energy,neutral,121,28,13,Interesting to see energy use per query showing up in vendor docs.
+P0282,2026-07-26,2026-07,Reddit,@researcher_261,Multimodal & voice,negative,78,7,5,"Screenshots in, structured data out. Multimodal quietly replaced half our OCR pipeline."
+P0283,2026-07-27,2026-07,Hacker News,@researcher_512,Agentic coding,positive,69,13,8,"Hot take: the real product is the test suite, the agent just fills it in."
+P0284,2026-07-27,2026-07,Bluesky,@researcher_624,Prices & tokens,negative,134,26,24,Per-token prices dropped again. Our bill went up anyway because we use ten times more.
+P0285,2026-07-27,2026-07,Threads,@researcher_989,Regulation & policy,neutral,99,12,9,"Spent the morning on an AI-use register for our org. Boring, necessary."
+P0286,2026-07-28,2026-07,Mastodon,@researcher_653,Benchmarks & evals,neutral,17,1,3,Leaderboards saturate within months. We trust our own eval set more than any public chart.
+P0287,2026-07-28,2026-07,Threads,@researcher_827,Compute & energy,neutral,24,4,2,Every second local news item here is about a new data centre and the grid.
+P0288,2026-08-01,2026-08,Threads,@researcher_525,Agentic coding,neutral,117,16,7,"Hot take: the real product is the test suite, the agent just fills it in."
+P0289,2026-08-02,2026-08,LinkedIn,@researcher_445,Reasoning & test-time compute,neutral,57,4,3,Paying for 'thinking time' per request is a strange new line item on our invoice.
+P0290,2026-08-02,2026-08,Bluesky,@researcher_213,Compute & energy,negative,233,17,23,Every second local news item here is about a new data centre and the grid.
+P0291,2026-08-02,2026-08,Hacker News,@researcher_492,Safety & trust,neutral,153,8,10,Prompt injection through web pages is our number one incident category now.
+P0292,2026-08-03,2026-08,Reddit,@researcher_763,Regulation & policy,positive,9,0,1,"Spent the morning on an AI-use register for our org. Boring, necessary."
+P0293,2026-08-05,2026-08,Reddit,@researcher_374,On-device AI,positive,133,8,12,On-device models finally good enough for note summaries. Privacy team is happy.
+P0294,2026-08-05,2026-08,Bluesky,@researcher_434,Compute & energy,negative,17,3,2,"GPU waitlists are shorter this year, power contracts are the new bottleneck."
+P0295,2026-08-06,2026-08,Hacker News,@researcher_711,Open-weight models,neutral,1532,448,125,Fine-tuned an open-weight model on our support tickets over a weekend. Good enough to ship internally.
+P0296,2026-08-08,2026-08,LinkedIn,@researcher_396,Open-weight models,negative,40,8,7,Fine-tuned an open-weight model on our support tickets over a weekend. Good enough to ship internally.
+P0297,2026-08-08,2026-08,Mastodon,@researcher_393,Prices & tokens,positive,216,54,16,Per-token prices dropped again. Our bill went up anyway because we use ten times more.
+P0298,2026-08-08,2026-08,Threads,@researcher_705,Multimodal & voice,negative,27,7,4,Voice mode is how my parents use AI now. No typing at all.
+P0299,2026-08-09,2026-08,LinkedIn,@researcher_776,Reasoning & test-time compute,neutral,58,4,3,Paying for 'thinking time' per request is a strange new line item on our invoice.
+P0300,2026-08-10,2026-08,LinkedIn,@researcher_146,Open-weight models,positive,28,6,3,Fine-tuned an open-weight model on our support tickets over a weekend. Good enough to ship internally.
+P0301,2026-08-11,2026-08,LinkedIn,@researcher_946,Regulation & policy,neutral,458,85,39,Compliance teams are reading model cards now. That's new.
+P0302,2026-08-11,2026-08,Hacker News,@researcher_676,Compute & energy,negative,14,1,2,Interesting to see energy use per query showing up in vendor docs.
+P0303,2026-08-11,2026-08,Reddit,@researcher_306,Safety & trust,positive,36,6,2,Prompt injection through web pages is our number one incident category now.
+P0304,2026-08-11,2026-08,Reddit,@researcher_320,Safety & trust,positive,379,80,33,Prompt injection through web pages is our number one incident category now.
+P0305,2026-08-12,2026-08,Bluesky,@researcher_564,On-device AI,positive,131,27,22,On-device models finally good enough for note summaries. Privacy team is happy.
+P0306,2026-08-12,2026-08,Threads,@researcher_377,Benchmarks & evals,positive,78,16,3,Started publishing our eval prompts with results. Much better conversations since.
+P0307,2026-08-12,2026-08,Threads,@researcher_699,Multimodal & voice,negative,22,1,1,Generated video got good enough that we now watermark all our own footage.
+P0308,2026-08-13,2026-08,Hacker News,@researcher_501,Agentic coding,negative,55,8,7,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0309,2026-08-13,2026-08,Threads,@researcher_562,Reasoning & test-time compute,positive,75,12,10,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0310,2026-08-13,2026-08,Bluesky,@researcher_116,Regulation & policy,neutral,44,7,7,Compliance teams are reading model cards now. That's new.
+P0311,2026-08-13,2026-08,Reddit,@researcher_666,Safety & trust,negative,107,8,4,Prompt injection through web pages is our number one incident category now.
+P0312,2026-08-15,2026-08,Bluesky,@researcher_608,Open-weight models,negative,85,20,10,"Licensing on open-weight models is getting more confusing, not less."
+P0313,2026-08-15,2026-08,Mastodon,@researcher_202,On-device AI,neutral,64,14,2,Ran a capable assistant fully offline on a laptop on a train. Felt like the future for a minute.
+P0314,2026-08-16,2026-08,Threads,@researcher_306,Regulation & policy,negative,10,1,1,Compliance teams are reading model cards now. That's new.
+P0315,2026-08-16,2026-08,Threads,@researcher_231,Benchmarks & evals,neutral,23,3,2,"Benchmark scores up, our internal task success flat. Classic."
+P0316,2026-08-16,2026-08,Bluesky,@researcher_230,Multimodal & voice,positive,27,5,3,Voice mode is how my parents use AI now. No typing at all.
+P0317,2026-08-17,2026-08,Hacker News,@researcher_305,Agentic coding,positive,67,7,12,"Hot take: the real product is the test suite, the agent just fills it in."
+P0318,2026-08-17,2026-08,Threads,@researcher_776,Reasoning & test-time compute,neutral,45,9,2,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0319,2026-08-17,2026-08,LinkedIn,@researcher_682,Compute & energy,neutral,26,1,0,"GPU waitlists are shorter this year, power contracts are the new bottleneck."
+P0320,2026-08-18,2026-08,Bluesky,@researcher_627,Prices & tokens,negative,155,31,13,Per-token prices dropped again. Our bill went up anyway because we use ten times more.
+P0321,2026-08-19,2026-08,Bluesky,@researcher_945,Open-weight models,neutral,9,2,1,Fine-tuned an open-weight model on our support tickets over a weekend. Good enough to ship internally.
+P0322,2026-08-19,2026-08,Hacker News,@researcher_447,Compute & energy,positive,126,12,16,"GPU waitlists are shorter this year, power contracts are the new bottleneck."
+P0323,2026-08-20,2026-08,Hacker News,@researcher_378,Agentic coding,positive,36,8,1,"Hot take: the real product is the test suite, the agent just fills it in."
+P0324,2026-08-21,2026-08,Mastodon,@researcher_743,Prices & tokens,negative,31,6,5,Cost dashboards for LLM usage are the new cloud-cost dashboards.
+P0325,2026-08-21,2026-08,Bluesky,@researcher_733,Multimodal & voice,neutral,63,6,10,"Screenshots in, structured data out. Multimodal quietly replaced half our OCR pipeline."
+P0326,2026-08-22,2026-08,Reddit,@researcher_194,Agentic coding,positive,145,21,18,"Handed a whole refactor to a coding agent this week. It finished, but reviewing the diff took longer than writing it would have."
+P0327,2026-08-22,2026-08,Reddit,@researcher_550,Agentic coding,positive,149,32,12,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0328,2026-08-23,2026-08,Hacker News,@researcher_445,Benchmarks & evals,neutral,137,13,22,Started publishing our eval prompts with results. Much better conversations since.
+P0329,2026-08-24,2026-08,Bluesky,@researcher_882,Agentic coding,neutral,51,3,3,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0330,2026-08-24,2026-08,LinkedIn,@researcher_223,Compute & energy,positive,42,3,3,Every second local news item here is about a new data centre and the grid.
+P0331,2026-08-25,2026-08,Hacker News,@researcher_772,Agentic coding,positive,57,16,3,"Handed a whole refactor to a coding agent this week. It finished, but reviewing the diff took longer than writing it would have."
+P0332,2026-08-25,2026-08,Threads,@researcher_138,Prices & tokens,negative,142,25,13,Per-token prices dropped again. Our bill went up anyway because we use ten times more.
+P0333,2026-08-27,2026-08,LinkedIn,@researcher_426,Agentic coding,negative,40,7,7,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0334,2026-08-28,2026-08,Mastodon,@researcher_589,Open-weight models,positive,222,16,22,Fine-tuned an open-weight model on our support tickets over a weekend. Good enough to ship internally.
+P0335,2026-08-28,2026-08,Hacker News,@researcher_646,On-device AI,positive,253,39,45,Battery life is the real benchmark for phone-side models.
+P0336,2026-08-28,2026-08,Reddit,@researcher_812,Multimodal & voice,neutral,75,10,10,Generated video got good enough that we now watermark all our own footage.
+P0337,2026-08-28,2026-08,Mastodon,@researcher_636,Multimodal & voice,negative,126,28,5,Voice mode is how my parents use AI now. No typing at all.
+P0338,2026-09-02,2026-09,Reddit,@researcher_127,Open-weight models,neutral,47,12,5,"Licensing on open-weight models is getting more confusing, not less."
+P0339,2026-09-04,2026-09,Mastodon,@researcher_856,Open-weight models,neutral,68,10,12,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0340,2026-09-05,2026-09,Bluesky,@researcher_427,Agentic coding,neutral,66,19,9,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0341,2026-09-06,2026-09,Mastodon,@researcher_274,Prices & tokens,negative,74,13,6,"Cheap small models for routing, expensive ones only when needed. Saved us 60% this quarter."
+P0342,2026-09-06,2026-09,Bluesky,@researcher_323,On-device AI,positive,33,3,5,Battery life is the real benchmark for phone-side models.
+P0343,2026-09-07,2026-09,Mastodon,@researcher_603,Prices & tokens,neutral,554,155,31,Per-token prices dropped again. Our bill went up anyway because we use ten times more.
+P0344,2026-09-07,2026-09,Threads,@researcher_448,On-device AI,positive,371,38,14,Ran a capable assistant fully offline on a laptop on a train. Felt like the future for a minute.
+P0345,2026-09-08,2026-09,Bluesky,@researcher_149,Compute & energy,negative,30,1,0,"GPU waitlists are shorter this year, power contracts are the new bottleneck."
+P0346,2026-09-09,2026-09,Bluesky,@researcher_145,Multimodal & voice,neutral,45,10,1,Generated video got good enough that we now watermark all our own footage.
+P0347,2026-09-09,2026-09,LinkedIn,@researcher_846,Multimodal & voice,neutral,16,2,0,Generated video got good enough that we now watermark all our own footage.
+P0348,2026-09-09,2026-09,Hacker News,@researcher_611,Safety & trust,neutral,24,3,3,We added a human sign-off step for every agent action that spends money.
+P0349,2026-09-10,2026-09,Mastodon,@researcher_847,Open-weight models,positive,368,64,71,"Licensing on open-weight models is getting more confusing, not less."
+P0350,2026-09-11,2026-09,Threads,@researcher_318,Agentic coding,positive,18,2,3,"Handed a whole refactor to a coding agent this week. It finished, but reviewing the diff took longer than writing it would have."
+P0351,2026-09-11,2026-09,Mastodon,@researcher_477,Agentic coding,negative,229,13,15,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0352,2026-09-13,2026-09,Bluesky,@researcher_407,Regulation & policy,neutral,148,28,22,Transparency rules for AI-generated content are changing how we label posts.
+P0353,2026-09-13,2026-09,Hacker News,@researcher_353,Compute & energy,negative,68,12,5,Interesting to see energy use per query showing up in vendor docs.
+P0354,2026-09-14,2026-09,Hacker News,@researcher_191,Open-weight models,positive,43,3,3,"Licensing on open-weight models is getting more confusing, not less."
+P0355,2026-09-14,2026-09,Mastodon,@researcher_131,Benchmarks & evals,neutral,77,14,3,"Benchmark scores up, our internal task success flat. Classic."
+P0356,2026-09-15,2026-09,Bluesky,@researcher_465,Reasoning & test-time compute,positive,104,22,14,Paying for 'thinking time' per request is a strange new line item on our invoice.
+P0357,2026-09-16,2026-09,Mastodon,@researcher_495,Compute & energy,neutral,45,12,8,"GPU waitlists are shorter this year, power contracts are the new bottleneck."
+P0358,2026-09-17,2026-09,Hacker News,@researcher_657,Reasoning & test-time compute,positive,20,3,1,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.
+P0359,2026-09-18,2026-09,LinkedIn,@researcher_114,Multimodal & voice,positive,17,2,2,Voice mode is how my parents use AI now. No typing at all.
+P0360,2026-09-19,2026-09,Threads,@researcher_105,Agentic coding,positive,27,2,5,"Hot take: the real product is the test suite, the agent just fills it in."
+P0361,2026-09-19,2026-09,Reddit,@researcher_117,Agentic coding,positive,62,12,4,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0362,2026-09-19,2026-09,Mastodon,@researcher_851,Regulation & policy,negative,67,5,4,Transparency rules for AI-generated content are changing how we label posts.
+P0363,2026-09-19,2026-09,Threads,@researcher_469,Regulation & policy,positive,14,4,0,Compliance teams are reading model cards now. That's new.
+P0364,2026-09-20,2026-09,Bluesky,@researcher_234,Agentic coding,positive,29,2,3,Our team now opens more PRs from agents than from humans. Review is the new bottleneck.
+P0365,2026-09-20,2026-09,Hacker News,@researcher_377,Safety & trust,negative,34,6,3,We added a human sign-off step for every agent action that spends money.
+P0366,2026-09-21,2026-09,Threads,@researcher_533,Agentic coding,positive,38,7,1,"Hot take: the real product is the test suite, the agent just fills it in."
+P0367,2026-09-21,2026-09,Reddit,@researcher_380,Multimodal & voice,positive,9,1,0,Generated video got good enough that we now watermark all our own footage.
+P0368,2026-09-22,2026-09,Threads,@researcher_401,Agentic coding,neutral,97,15,7,"Handed a whole refactor to a coding agent this week. It finished, but reviewing the diff took longer than writing it would have."
+P0369,2026-09-22,2026-09,Threads,@researcher_625,Prices & tokens,positive,132,26,17,"Cheap small models for routing, expensive ones only when needed. Saved us 60% this quarter."
+P0370,2026-09-22,2026-09,Bluesky,@researcher_185,On-device AI,neutral,19,2,3,On-device models finally good enough for note summaries. Privacy team is happy.
+P0371,2026-09-22,2026-09,Mastodon,@researcher_808,Compute & energy,positive,56,4,1,Every second local news item here is about a new data centre and the grid.
+P0372,2026-09-22,2026-09,Mastodon,@researcher_526,Multimodal & voice,neutral,180,34,27,"Screenshots in, structured data out. Multimodal quietly replaced half our OCR pipeline."
+P0373,2026-09-23,2026-09,Hacker News,@researcher_877,Open-weight models,positive,30,4,5,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0374,2026-09-23,2026-09,LinkedIn,@researcher_387,Regulation & policy,positive,10,0,0,Transparency rules for AI-generated content are changing how we label posts.
+P0375,2026-09-23,2026-09,LinkedIn,@researcher_460,Benchmarks & evals,negative,21,3,2,Started publishing our eval prompts with results. Much better conversations since.
+P0376,2026-09-23,2026-09,Threads,@researcher_406,Compute & energy,negative,40,2,3,Every second local news item here is about a new data centre and the grid.
+P0377,2026-09-23,2026-09,Threads,@researcher_880,Safety & trust,negative,72,21,4,We added a human sign-off step for every agent action that spends money.
+P0378,2026-09-24,2026-09,Mastodon,@researcher_483,Agentic coding,negative,140,37,5,"Handed a whole refactor to a coding agent this week. It finished, but reviewing the diff took longer than writing it would have."
+P0379,2026-09-24,2026-09,Mastodon,@researcher_487,Open-weight models,negative,42,11,2,Another open-weight release that runs on a single workstation GPU. The gap to closed models keeps shrinking.
+P0380,2026-09-24,2026-09,Threads,@researcher_147,Prices & tokens,negative,15,3,0,Cost dashboards for LLM usage are the new cloud-cost dashboards.
+P0381,2026-09-24,2026-09,Mastodon,@researcher_857,Benchmarks & evals,neutral,7,1,0,"Benchmark scores up, our internal task success flat. Classic."
+P0382,2026-09-24,2026-09,Bluesky,@researcher_981,Multimodal & voice,positive,50,10,6,"Screenshots in, structured data out. Multimodal quietly replaced half our OCR pipeline."
+P0383,2026-09-26,2026-09,Threads,@researcher_737,On-device AI,negative,270,52,39,On-device models finally good enough for note summaries. Privacy team is happy.
+P0384,2026-09-26,2026-09,Mastodon,@researcher_217,Safety & trust,neutral,25,7,1,We added a human sign-off step for every agent action that spends money.
+P0385,2026-09-27,2026-09,Mastodon,@researcher_526,Agentic coding,neutral,226,31,33,"Hot take: the real product is the test suite, the agent just fills it in."
+P0386,2026-09-27,2026-09,Mastodon,@researcher_259,Compute & energy,neutral,20,1,3,Interesting to see energy use per query showing up in vendor docs.
+P0387,2026-09-28,2026-09,Reddit,@researcher_143,Reasoning & test-time compute,positive,19,4,1,Watched a model argue with itself for 40 seconds and get the right answer. Still not sure how I feel.

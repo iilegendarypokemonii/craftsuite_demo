@@ -1,0 +1,103 @@
+{
+ "app": "GridCraft",
+ "summary": "GridCraft is a spreadsheet app, like Microsoft Excel. It opens and saves .xlsx files. It can also work from typed commands.",
+ "use_cases": [
+  "Make a formatted report with charts from a monthly CSV export.",
+  "Calculate shares and changes with COUNTIFS formulas. The results update when the data changes.",
+  "Print a summary sheet to PDF automatically every night.",
+  "Check 1 number fast. Get 1 answer from a saved workbook with 1 typed formula."
+ ],
+ "story": "GridCraft calculated the numbers for Signal & Noise 2026. It imported 387 posts from a CSV file. Each post has 1 theme and 1 tone label: positive, neutral or negative. COUNTIFS formulas counted the posts for each month and theme. Other formulas calculated the share of the conversation and the % negative from these counts. GridCraft then drew 3 charts and printed the Summary sheet to PDF. WordCraft and PdfCraft used 2 of these charts.",
+ "recipe": [
+  "gridcraft-cli run --script build.jsonl --out signal-noise-2026.xlsx",
+  "gridcraft-cli run --in signal-noise-2026.xlsx --cmd 'file.exportPdf={\"path\":\"summary.pdf\"}'",
+  "gridcraft-cli eval '=COUNTIF(Posts!G2:G388,\"negative\")/COUNTA(Posts!G2:G388)' --in signal-noise-2026.xlsx"
+ ],
+ "recipe_note": "Build the workbook from a list of steps. Print the Summary sheet to PDF. Check 1 number.",
+ "assets": [
+  {
+   "file": "gridcraft-summary-sheet.png",
+   "kind": "image",
+   "caption": "The Summary sheet shows the share of the conversation per month, the tone per theme and 3 charts.",
+   "description": "GridCraft printed the finished Summary sheet to PDF. PdfCraft then made this image from the PDF page.",
+   "made_with_app": true,
+   "how": "gridcraft-cli run --in signal-noise-2026.xlsx --cmd 'file.exportPdf={\"path\":\"summary.pdf\",\"sheets\":\"active\"}'; pdfcraft-cli render summary.pdf --page 1 --dpi 150 --out summary.png (margins trimmed with PIL)"
+  },
+  {
+   "file": "gridcraft-charts.png",
+   "kind": "image",
+   "caption": "GridCraft drew these 2 charts. They show the share of the conversation for 4 themes and the share of negative posts.",
+   "description": "GridCraft drew these charts from the formulas in the workbook. PdfCraft made an image of the PDF page. A short Python script cropped the 2 charts from it.",
+   "made_with_app": false,
+   "how": "GridCraft file.exportPdf, then pdfcraft-cli render summary.pdf --page 1 --dpi 300; charts cropped and stacked with PIL"
+  },
+  {
+   "file": "gridcraft-build.gif",
+   "kind": "gif",
+   "caption": "The animation shows the workbook in 6 stages: import, count, share, tone, format and charts.",
+   "description": "GridCraft ran the build to the end of each stage and printed the result to PDF. PdfCraft made an image of each PDF. A short Python script joined the images into a GIF and added captions.",
+   "made_with_app": false,
+   "how": "For each step N: gridcraft-cli run --script stage_v2_N.jsonl --cmd 'file.exportPdf={...}', then pdfcraft-cli render --dpi 110; frames captioned and joined into a GIF with PIL"
+  },
+  {
+   "file": "signal-noise-2026.xlsx",
+   "kind": "project",
+   "caption": "The workbook has 3 sheets: Summary with percentages, Counts with COUNTIFS totals, and Posts with the data.",
+   "description": "GridCraft read the raw CSV file and ran a list of 535 steps. GridCraft wrote every formula, coloured the cells and drew 3 charts.",
+   "made_with_app": true,
+   "how": "gridcraft-cli run --script gridcraft-build-script.jsonl --out signal-noise-2026.xlsx"
+  },
+  {
+   "file": "gridcraft-summary.pdf",
+   "kind": "document",
+   "caption": "This 1-page PDF of the Summary sheet is ready to print.",
+   "description": "GridCraft printed the Summary sheet to an A4 landscape PDF. It added the footer and fitted the sheet to 1 page.",
+   "made_with_app": true,
+   "how": "gridcraft-cli run --in signal-noise-2026.xlsx --cmd 'file.exportPdf={\"path\":\"summary.pdf\",\"sheets\":\"active\"}'"
+  },
+  {
+   "file": "eval-examples.txt",
+   "kind": "document",
+   "caption": "GridCraft answered 4 quick formula checks, for example: 53% of Prices & tokens posts are negative.",
+   "description": "Each answer comes from 1 typed formula. GridCraft calculated each answer from the saved workbook.",
+   "made_with_app": true,
+   "how": "gridcraft-cli eval '=TEXT(COUNTIFS(Posts!F2:F388,\"Prices & tokens\",Posts!G2:G388,\"negative\")/COUNTIF(...),\"0%\")&...' --in signal-noise-2026.xlsx"
+  },
+  {
+   "file": "gridcraft-posts-sheet.png",
+   "kind": "image",
+   "caption": "The Posts sheet shows the 387 posts that GridCraft imported from the CSV file as a table.",
+   "description": "GridCraft imported the CSV file as a formatted table with a frozen header row. GridCraft printed the sheet to PDF. PdfCraft made this image from the PDF.",
+   "made_with_app": true,
+   "how": "gridcraft-cli run --script stage_v2_1_import.jsonl + file.exportPdf (print area A1:K34); pdfcraft-cli render --dpi 110 (trimmed with PIL)"
+  },
+  {
+   "file": "gridcraft-counts-sheet.png",
+   "kind": "image",
+   "caption": "The Counts sheet shows the COUNTIFS totals behind the percentages.",
+   "description": "GridCraft counted the posts for each month and theme with COUNTIFS formulas. The Summary sheet calculates its percentages from these counts.",
+   "made_with_app": true,
+   "how": "gridcraft-cli run --in signal-noise-2026.xlsx --cmd 'sheet.activate={\"sheet\":\"Counts\"}' --cmd 'file.exportPdf={...}'; pdfcraft-cli render --dpi 130 (trimmed with PIL)",
+   "hidden": true
+  },
+  {
+   "file": "gridcraft-summary.html",
+   "kind": "document",
+   "caption": "This web page shows the cells of the Summary sheet, without the charts.",
+   "description": "GridCraft saved the Summary sheet as an HTML table. The web page keeps the colours but not the charts.",
+   "made_with_app": true,
+   "how": "gridcraft-cli convert signal-noise-2026.xlsx summary.html --sheet Summary",
+   "hidden": true
+  },
+  {
+   "file": "gridcraft-build-script.jsonl",
+   "kind": "document",
+   "caption": "This list holds the 535 steps that GridCraft did to build the workbook.",
+   "description": "A small Python program wrote this list of steps. GridCraft read the list and did each step in order.",
+   "made_with_app": false,
+   "how": "Written by a Python helper (make_script_v2.py); run by gridcraft-cli run --script",
+   "hidden": true
+  }
+ ],
+ "headless_notes": "All work ran through gridcraft-cli with no window: run, convert, eval, info and cat. GridCraft has no command that saves a sheet as an image. GridCraft printed each sheet to PDF, and pdfcraft-cli render made the PNG. range.fill reads formulas relative to cell A1, so each formula went in cell by cell. Charts need a single block of cells, so 2 small chart-data blocks feed the line and bar charts. In footers, write '&&' for 1 ampersand. The HTML export has no charts."
+}

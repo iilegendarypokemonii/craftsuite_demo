@@ -1,0 +1,87 @@
+{
+ "app": "FilmCraft",
+ "summary": "FilmCraft is a video editor, like Adobe Premiere Pro. You put clips, pictures, music, titles and subtitles on a timeline. Then you export 1 video.",
+ "use_cases": [
+  "Edit a 30-second social media video from pictures, a short animation and music.",
+  "Add a name title and subtitles to an interview. Export an MP4 video and a subtitle file.",
+  "Make a slideshow with soft fades for a birthday or a team event.",
+  "When a picture or a number changes, make the same video again from the saved list of steps."
+ ],
+ "story": "FilmCraft edited the 20-second video that connects the apps. It starts with the PhotoCraft header picture. Then it shows the EffectCraft card, the GridCraft table and a sound-wave picture of the SoundCraft tune. A Python script drew that picture. Soft fades connect the parts. The SoundCraft tune is the music. A label says \"Illustrative synthetic data\" during the full video. Subtitles tell you that every number is a share of the conversation.",
+ "recipe": [
+  "filmcraft-cli run build_all.jsonl --save-as teaser.fcproj",
+  "filmcraft-cli --project teaser.fcproj exec file.exportMedia path=teaser.mp4 burnCaptions=true wait=true",
+  "filmcraft-cli --project teaser.fcproj render --seconds 10 --out frame.png"
+ ],
+ "recipe_note": "Build the video edit from a list of steps. Export the video with subtitles. Then save 1 frame as a picture.",
+ "assets": [
+  {
+   "file": "signal_noise_teaser.mp4",
+   "kind": "video",
+   "caption": "The 20-second video has music and subtitles. It uses media from PhotoCraft, EffectCraft, GridCraft and SoundCraft. The data is invented.",
+   "description": "A list of steps told FilmCraft where to put each clip, fade, label and subtitle. FilmCraft then made the video and its sound in 1 export.",
+   "made_with_app": true,
+   "how": "filmcraft-cli --compact run build_all.jsonl --save-as signal_noise_teaser.fcproj; filmcraft-cli --project signal_noise_teaser.fcproj exec file.exportMedia '{\"path\":\"signal_noise_teaser.mp4\",\"format\":\"h264\",\"bitrateKbps\":1400,\"bitrateMode\":\"vbr1Pass\",\"hardwareEncoding\":\"off\",\"burnCaptions\":true,\"captionSidecar\":\"vtt\",\"wait\":true}' (1280x720, 30 fps, H.264 + AAC)"
+  },
+  {
+   "file": "signal_noise_teaser_frame_2s.png",
+   "kind": "image",
+   "caption": "Frame at 2 seconds: the PhotoCraft header with a FilmCraft subtitle and label.",
+   "made_with_app": true,
+   "how": "filmcraft-cli --project signal_noise_teaser.fcproj render --seconds 2 --out signal_noise_teaser_frame_2s.png",
+   "description": "FilmCraft drew this frame from the saved edit. The page uses it as the preview image of the video."
+  },
+  {
+   "file": "signal_noise_teaser.gif",
+   "kind": "gif",
+   "caption": "The silent GIF preview of the video is 576 × 324 pixels.",
+   "description": "FilmCraft exported the same edit as a small GIF without sound. Use it where a video does not play.",
+   "made_with_app": true,
+   "how": "filmcraft-cli --project signal_noise_teaser.fcproj exec file.exportMedia '{\"path\":\"signal_noise_teaser.gif\",\"format\":\"gif\",\"scale\":0.45,\"fps\":8,\"burnCaptions\":true,\"audio\":false,\"wait\":true}'"
+  },
+  {
+   "file": "signal_noise_teaser_program_10s.png",
+   "kind": "image",
+   "caption": "The frame at 10 s shows the EffectCraft card with the FilmCraft label.",
+   "description": "FilmCraft drew the frame at 10 seconds.",
+   "made_with_app": true,
+   "how": "filmcraft-cli --project signal_noise_teaser.fcproj render --seconds 10 --out signal_noise_teaser_program_10s.png"
+  },
+  {
+   "file": "signal_noise_teaser_frame_mix.png",
+   "kind": "image",
+   "caption": "Frame at 16.5 s: a FilmCraft fade blends the GridCraft table into the sound-wave picture. A subtitle shows below.",
+   "description": "FilmCraft drew this frame in the middle of a cross-dissolve. The two pictures blend at half strength. The subtitle stays readable above the label.",
+   "made_with_app": true,
+   "hidden": false,
+   "how": "filmcraft-cli --project signal_noise_teaser.fcproj render --seconds 16.5 --out signal_noise_teaser_frame_mix.png (mid-point of the 0.5 s cross_dissolve, 16.233-16.733 s)"
+  },
+  {
+   "file": "signal_noise_teaser.vtt",
+   "kind": "document",
+   "caption": "The subtitle file (WebVTT) holds the text of the video subtitles.",
+   "description": "FilmCraft wrote the subtitles into this separate file during the video export.",
+   "made_with_app": true,
+   "hidden": true,
+   "how": "Same file.exportMedia call (captionSidecar: vtt)"
+  },
+  {
+   "file": "signal_noise_teaser.fcproj",
+   "kind": "project",
+   "caption": "The FilmCraft project of the video holds the timeline, fades, label, subtitles and markers.",
+   "description": "FilmCraft saved the project after it did the list of steps. The download does not include the media files.",
+   "made_with_app": true,
+   "how": "Saved by filmcraft-cli run build_all.jsonl --save-as signal_noise_teaser.fcproj"
+  },
+  {
+   "file": "build_all.jsonl",
+   "kind": "document",
+   "caption": "This list holds the steps that build the video edit, 1 step per line.",
+   "description": "Small Python programs wrote this list. FilmCraft did the steps and built the full edit.",
+   "made_with_app": false,
+   "hidden": true,
+   "how": "Python writes JSONL lines (file.newSequence, file.import, file.newColorMatte, timeline.place, effects.setParam, sequence.applyVideoTransition, graphics.newText/newShape/set, captions.newTrack/setStyle/add, markers.add); filmcraft-cli run executes them."
+  }
+ ],
+ "headless_notes": "All work used filmcraft-cli run, exec, render and probe. No window opened and no sound played. The PhotoCraft header and the GridCraft table are their v2 files; the edit waited for both .v2-ready markers. Clip and item numbers are in creation order, so the command list uses fixed numbers. A test import of the exported MP4 showed the burned-in subtitles. probe showed H.264 High, 1280x720, 30 fps, with AAC sound. Python measured the exported sound: peak -1.0 dBFS, RMS -18.3 dBFS. GIF frame times round to 120 ms, so the GIF plays about 4% fast. Subtitles sit at the bottom center, above the label: captions.setStyle {anchor: bottom, margin: 0.15}. The WebVTT file stores no position, so video players use their default bottom position."
+}

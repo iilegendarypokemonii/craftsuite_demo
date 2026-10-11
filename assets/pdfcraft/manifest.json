@@ -1,0 +1,85 @@
+{
+ "app": "PdfCraft",
+ "summary": "PdfCraft is a PDF reader and editor, like Adobe Acrobat. It combines PDF files, edits them and makes images of the pages. It can also work from typed commands.",
+ "use_cases": [
+  "Combine a report and its appendix into 1 PDF with bookmarks.",
+  "Add a cover page and set the title and author before you send a file.",
+  "Make thumbnails of each page for a website or a document library.",
+  "Extract the text of a PDF for search or for a short summary."
+ ],
+ "story": "PdfCraft made the final PDF of the project. It combined the WordCraft report and the GridCraft summary sheet into 1 file. It added a cover page with the key findings and a chart. It set the title, the author and the bookmarks. It also made a 4-page highlights file with the key pages. Then it extracted the text and made an image of every page.",
+ "recipe": [
+  "pdfcraft-cli combine report.pdf summary.pdf --out dossier.pdf",
+  "pdfcraft-cli edit dossier.pdf --out final.pdf --insert-blank 1 --title \"Signal & Noise 2026\"",
+  "pdfcraft-cli render final.pdf --page 1 --dpi 110 --out cover.png"
+ ],
+ "recipe_note": "Combine 2 PDF files. Add a blank first page and a title. Make a PNG image of page 1.",
+ "assets": [
+  {
+   "file": "pdfcraft-page-1.png",
+   "kind": "image",
+   "caption": "PdfCraft made this cover page for the final PDF.",
+   "description": "PdfCraft placed the title, the key findings and a GridCraft chart on a blank page. Then it drew this image of the page.",
+   "made_with_app": true,
+   "how": "pdfcraft-cli render signal-noise-2026-dossier.pdf --page 1 --dpi 110 --out page-1.png"
+  },
+  {
+   "file": "pdfcraft-page-flip.gif",
+   "kind": "gif",
+   "caption": "The GIF flips through the 6 pages of the final PDF.",
+   "description": "PdfCraft drew each page as an image. A short Python script joined the 6 images into an animated GIF.",
+   "made_with_app": false,
+   "how": "pdfcraft-cli render signal-noise-2026-dossier.pdf --page 1..6 --dpi 110; frames joined into a GIF with PIL"
+  },
+  {
+   "file": "signal-noise-2026-dossier.pdf",
+   "kind": "document",
+   "caption": "The final 6-page PDF holds the cover, the findings report and the summary sheet.",
+   "description": "PdfCraft joined the 2 PDF files into 1 file and added a blank first page. On that page, it placed the title, the key findings and a GridCraft chart.",
+   "made_with_app": true,
+   "how": "pdfcraft-cli combine wordcraft-report.pdf gridcraft-summary.pdf --out 01.pdf; pdfcraft-cli edit 01.pdf --out 02.pdf --insert-blank 1 --title '...' --author '...'; pdfcraft-cli run --script cover.json (doc_background, page_add_text, page_add_image, doc_set_info, bookmark_add, doc_save)"
+  },
+  {
+   "file": "signal-noise-2026-highlights.pdf",
+   "kind": "document",
+   "caption": "The 4-page highlights file holds the cover, the summary, the share table and the summary sheet.",
+   "description": "PdfCraft copied 4 key pages from the final PDF into a new file. It gave the file a title and a bookmark for each page.",
+   "made_with_app": true,
+   "how": "pdfcraft-cli extract signal-noise-2026-dossier.pdf --pages 1,2,3,6 --out h.pdf; pdfcraft-cli edit h.pdf --out h2.pdf --title '...'; pdfcraft-cli run --script highlights.json (bookmark_add x4, doc_set_info, doc_save)"
+  },
+  {
+   "file": "pdfcraft-thumbnails.png",
+   "kind": "image",
+   "caption": "These thumbnails show all 6 pages of the final PDF.",
+   "description": "PdfCraft drew a small image of each page. A short Python script placed the 6 images in a row.",
+   "made_with_app": false,
+   "how": "pdfcraft-cli render --page N --dpi 40 for each page; placed in a row with PIL"
+  },
+  {
+   "file": "pdfcraft-page-6.png",
+   "kind": "image",
+   "caption": "Page 6 shows the GridCraft summary sheet inside the final PDF.",
+   "description": "PdfCraft drew this image of page 6. The page keeps its landscape layout from GridCraft.",
+   "made_with_app": true,
+   "how": "pdfcraft-cli render signal-noise-2026-dossier.pdf --page 6 --dpi 110 --out page-6.png"
+  },
+  {
+   "file": "pdfcraft-highlights.png",
+   "kind": "image",
+   "caption": "These thumbnails show the 4 pages of the highlights file.",
+   "description": "PdfCraft drew a small image of each page. A short Python script placed the 4 images in a row.",
+   "made_with_app": false,
+   "how": "pdfcraft-cli render signal-noise-2026-highlights.pdf --page N --dpi 40; placed in a row with PIL",
+   "hidden": true
+  },
+  {
+   "file": "pdfcraft-text-extract-p2.txt",
+   "kind": "document",
+   "caption": "PdfCraft read this text from page 2 of the final PDF.",
+   "description": "PdfCraft read the text of page 2 in reading order. It saved the text as a plain text file.",
+   "made_with_app": true,
+   "how": "pdfcraft-cli text signal-noise-2026-dossier.pdf --page 2"
+  }
+ ],
+ "headless_notes": "All work ran through pdfcraft-cli with no window: combine, edit, extract, text, render, info and run --script. Text that PdfCraft adds with the standard fonts must use Western European characters. It refused the arrow character, so the cover uses words. Text from table pages comes out column by column, so the text sample uses page 2. The edit --rotate option works, but no page needed it: all pages read upright. PdfCraft does not write GIF files, so Python joined the frames."
+}

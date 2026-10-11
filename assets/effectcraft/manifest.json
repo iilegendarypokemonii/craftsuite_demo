@@ -1,0 +1,70 @@
+{
+ "app": "EffectCraft",
+ "summary": "EffectCraft is an animation app for text and graphics, like Adobe After Effects. You animate text, shapes and video. Each item is on its own layer, like a stack of clear sheets. A saved list of steps can build a full animation.",
+ "use_cases": [
+  "Animate a chart for a presentation. The bars grow and the numbers increase.",
+  "Make an animated title or end card for a YouTube video.",
+  "Make 50 name cards from 1 template and a list of names.",
+  "Export the same animation as MP4 for video and as GIF for chat or email."
+ ],
+ "story": "EffectCraft made the animated data card for the video. The title appears letter by letter. The bars grow month by month. They show the share of the conversation for 2 themes. Then 2 counters change to the final numbers. Agentic coding ends at 20%, up from 9%. Reasoning & test-time compute ends at 6%, down from 18%. A \"Breakout theme\" label appears last.",
+ "recipe": [
+  "effectcraft-cli script signal_noise_card.jsx --empty --save-as card.ecproj",
+  "effectcraft-cli render --project card.ecproj --out card.mp4 --format h264",
+  "effectcraft-cli render-frame --project card.ecproj --time 6.5 --out still.png"
+ ],
+ "recipe_note": "Build the card from a list of steps. Export it as a video. Then save 1 frame as a picture.",
+ "assets": [
+  {
+   "file": "signal_noise_card.mp4",
+   "kind": "video",
+   "caption": "The animated card lasts 7 seconds. Agentic coding grows to 20% of the conversation, and Reasoning & test-time compute falls to 6%. The data is invented.",
+   "description": "A list of steps told EffectCraft how to make and move each text, bar and counter. EffectCraft then drew all 210 frames and saved them as a video.",
+   "made_with_app": true,
+   "how": "effectcraft-cli script signal_noise_card.jsx --empty --save-as signal_noise_card.ecproj; effectcraft-cli render --project signal_noise_card.ecproj --comp \"Signal & Noise card\" --out signal_noise_card.mp4 --format h264 --bitrate 2500 --audio off (1280x720, 30 fps)"
+  },
+  {
+   "file": "signal_noise_card.gif",
+   "kind": "gif",
+   "caption": "EffectCraft also saved the card as a GIF that plays on its own, at 640 × 360 pixels.",
+   "description": "EffectCraft exported the same animation at half size as a GIF. A GIF plays in chat apps and email.",
+   "made_with_app": true,
+   "how": "effectcraft-cli render --project signal_noise_card.ecproj --comp \"Signal & Noise card\" --out signal_noise_card.gif --format gif --resolution half --fps 15"
+  },
+  {
+   "file": "signal_noise_card_still.png",
+   "kind": "image",
+   "caption": "This is the frame at 6.5 s, after all numbers appear. It shows 20% for Agentic coding and 6% for Reasoning & test-time compute.",
+   "description": "EffectCraft drew 1 frame at 6.5 seconds and saved it as a picture. The card lasts 7 seconds.",
+   "made_with_app": true,
+   "how": "effectcraft-cli render-frame --project signal_noise_card.ecproj --comp \"Signal & Noise card\" --time 6.5 --out signal_noise_card_still.png"
+  },
+  {
+   "file": "signal_noise_card_midway.png",
+   "kind": "image",
+   "caption": "In the frame at 2.6 s, the bars grow and the counters change.",
+   "description": "EffectCraft drew 1 frame while the bars and the counters still move.",
+   "made_with_app": true,
+   "hidden": true,
+   "how": "effectcraft-cli render-frame --project signal_noise_card.ecproj --comp \"Signal & Noise card\" --time 2.6 --out signal_noise_card_midway.png"
+  },
+  {
+   "file": "signal_noise_card.ecproj",
+   "kind": "project",
+   "caption": "The EffectCraft project of the card has 50 layers.",
+   "description": "EffectCraft saved the project after it did the list of steps. Open it to change a colour, a text or a timing.",
+   "made_with_app": true,
+   "how": "Saved by effectcraft-cli script signal_noise_card.jsx --empty --save-as signal_noise_card.ecproj"
+  },
+  {
+   "file": "signal_noise_card.jsx",
+   "kind": "document",
+   "caption": "This file holds the list of steps for the card, in the same JavaScript as Adobe After Effects.",
+   "description": "This is the list of steps that builds the card. EffectCraft reads it like Adobe After Effects reads the same file type.",
+   "made_with_app": false,
+   "hidden": true,
+   "how": "Hand-written JavaScript (AE object model + app.run engine commands); run by effectcraft-cli script."
+  }
+ ],
+ "headless_notes": "All work used effectcraft-cli script, render and render-frame. No window opened. The script engine has no String.substr; use substring. Text needs layer.property(\"Text\").property(\"Source Text\"). script --save-as saves the project even when the script fails, so check the output. The card uses the bundled Inter font. A 7-second render at 720p takes about 4 s on the CPU."
+}

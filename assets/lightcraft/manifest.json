@@ -1,0 +1,95 @@
+{
+ "app": "LightCraft",
+ "summary": "LightCraft is a free photo library and photo editor, like Adobe Lightroom. It keeps your photos in a library that you can browse. You can adjust light and colour. Your edits never change the original file.",
+ "use_cases": [
+  "Apply 1 saved set of settings to all photos from a trip. Then adjust the few photos that need more work.",
+  "Join 3 photos of a sunset (dark, normal and bright) into 1 photo. The bright sky and the dark shore both keep their detail.",
+  "Export small copies for the web with your name or a caption in the corner.",
+  "Save your settings. Next month, apply them again to make the new photos match."
+ ],
+ "story": "LightCraft made the cover photo of the project. It joined 3 photos of a computer-made sunset (dark, normal and bright) into 1 photo. Then it gave the photo warm orange colours, more contrast and darker corners for the cover. A small caption in the corner says that the scene is invented. LightCraft also supplied the sample photos that PhotoCraft used.",
+ "recipe": [
+  "lightcraft-cli merge hdr dark.dng normal.dng bright.dng",
+  "lightcraft-cli render cover-HDR.dng -o cover.jpg --preset lc.teal-orange --set light.contrast=30",
+  "lightcraft-cli snapshot --script tour.jsonl -o screen.png photos"
+ ],
+ "recipe_note": "Join 3 photos (dark, normal and bright) into 1 photo. Export it with a saved set of settings and 1 more change. Save a picture of the library screen.",
+ "assets": [
+  {
+   "file": "cover-before.jpg",
+   "kind": "image",
+   "caption": "This is the joined sunset photo before any edit.",
+   "made_with_app": true,
+   "how": "lightcraft-cli render synth_hdr/bracket-0-HDR.dng -o final_before.jpg --size 1600 --quality 86 --opt 'watermark={\"text\":\"Signal & Noise 2026 · illustrative, synthetic scene\",\"anchor\":\"bottomRight\",\"size\":0.03,\"opacity\":0.8}'",
+   "description": "LightCraft exported the joined sunset photo with no colour changes. It added a small caption in the corner that says the scene is invented."
+  },
+  {
+   "file": "cover-after-graded.jpg",
+   "kind": "image",
+   "caption": "After the edit, the cover has a 'Teal & Orange' colour style, more contrast and darker corners.",
+   "made_with_app": true,
+   "how": "lightcraft-cli render synth_hdr/bracket-0-HDR.dng -o final_after.jpg --size 1600 --preset lc.teal-orange --set light.contrast=30 --set light.highlights=-50 --set light.shadows=25 --set light.blacks=-25 --set color.vibrance=25 --set effects.dehaze=20 --set effects.clarity=15 --set vignette.amount=-30 --set grading.shadows.hue=220 --set grading.shadows.sat=30 --set grading.highlights.hue=25 --set grading.highlights.sat=20 --opt 'watermark={...}'",
+   "description": "LightCraft applied a saved set of colour settings (a preset). Then it changed 12 more settings, for example shadows, haze and clarity. The original file did not change."
+  },
+  {
+   "file": "hdr-merge-preview.png",
+   "kind": "image",
+   "caption": "LightCraft joined 3 photos (dark, normal and bright) into 1 balanced photo.",
+   "made_with_app": true,
+   "how": "lightcraft-cli synth-merge hdr -o synth_hdr; lightcraft-cli merge hdr --preview hdr_preview.png synth_hdr/bracket-0.dng synth_hdr/bracket-1.dng synth_hdr/bracket-2.dng (full merge without --preview wrote bracket-0-HDR.dng)",
+   "description": "LightCraft aligned a dark, a normal and a bright photo of the same scene. Then it blended them. The bright sun and the dark hill both keep their detail."
+  },
+  {
+   "file": "hdr-brackets-to-merge.jpg",
+   "kind": "image",
+   "caption": "The image shows the dark, normal and bright photos and the joined result.",
+   "made_with_app": false,
+   "how": "Each panel rendered by LightCraft (lightcraft-cli render synth_hdr/bracket-N.dng -o bracket-N.jpg --size 600); strip and labels assembled with Python/PIL",
+   "description": "LightCraft exported the 3 photos and the joined photo. A short Python script put them side by side and added labels."
+  },
+  {
+   "file": "ui-project-grid.png",
+   "kind": "image",
+   "caption": "The LightCraft library shows the 10 photos of the project.",
+   "made_with_app": true,
+   "how": "lightcraft-cli snapshot --script tour_project.jsonl -o ui_desk.png --size 1600x1000 desk",
+   "description": "This is the LightCraft screen with the cover, the sample landscapes and the other photos in a grid. LightCraft drew its screen as an image."
+  },
+  {
+   "file": "ui-develop-before-after.png",
+   "kind": "image",
+   "caption": "The cover edit shows the photo before (left) and after (right), with the settings at the side.",
+   "made_with_app": true,
+   "how": "Second screenshot of the same snapshot run (select cover → detail view → preset + sliders → split before/after)",
+   "description": "LightCraft drew its edit screen as an image. It applied the cover settings. The split view shows the photo before and after the edit."
+  },
+  {
+   "file": "ui-demo-library.png",
+   "kind": "image",
+   "caption": "This is the sample library that LightCraft includes.",
+   "made_with_app": true,
+   "how": "lightcraft-cli snapshot --demo --script tour_demo.jsonl -o ui_demo.png --size 1600x1000",
+   "description": "This is the library screen with the LightCraft sample photos. The app drew it without a window.",
+   "hidden": true
+  },
+  {
+   "file": "ui-demo-develop-split.png",
+   "kind": "image",
+   "caption": "The split view shows a sample photo before and after the 'Golden Hour' settings.",
+   "made_with_app": true,
+   "how": "Second screenshot of the same --demo snapshot run",
+   "description": "This is the edit screen with warm saved settings on a sample photo of a lake. The left half shows the photo before the edit.",
+   "hidden": true
+  },
+  {
+   "file": "snapshot-script.jsonl",
+   "kind": "document",
+   "caption": "This list holds the steps for the screenshots.",
+   "made_with_app": false,
+   "how": "Hand-written control script read by lightcraft-cli snapshot --script",
+   "description": "LightCraft follows this short list of steps on its own. The steps sort the grid, open the cover, apply the settings and take a screenshot.",
+   "hidden": true
+  }
+ ],
+ "headless_notes": "render, merge, synth-merge, run --demo app.export and snapshot all ran without a window. The docs say that snapshot draws the full interface on the CPU, with no window and no GPU. A snapshot took about 1 second. app.export with a folder path wrote to the working folder, so the steps use a file path. The synthetic panorama preview had a visible seam, so the page does not use it. All source images are synthetic. The project uses no real photographs."
+}

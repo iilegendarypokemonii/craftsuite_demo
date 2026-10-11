@@ -1,0 +1,62 @@
+{
+ "app": "SoundCraft",
+ "summary": "SoundCraft is an audio editor and mixer, like Adobe Audition. You record, edit, mix and export sound with it. A saved list of steps can control every part of the work.",
+ "use_cases": [
+  "Clean a podcast episode and give it an even volume. Then export it at a standard loudness.",
+  "Make a short intro tune for a video with the built-in instruments and drums.",
+  "Make sound from numbers, for example 1 note for each sale or visitor.",
+  "Give 100 voice clips the same tone, fades and volume with 1 list of steps."
+ ],
+ "story": "SoundCraft made the music of the project: a 20-second tune from the numbers. Each month from January to September gets 1 bar, a short part of the tune. A high instrument plays more notes as Agentic coding grows from 9% to 20% of the conversation. A low instrument plays fewer notes as Reasoning & test-time compute falls from 18% to 6%. A soft hiss fades, and a clear tone becomes louder. You hear the signal rise above the noise. FilmCraft used this tune as the music of the video.",
+ "recipe": [
+  "soundcraft-cli script sonify.txt --save sonify.scraft",
+  "soundcraft-cli script master.txt --save sting_master.scraft",
+  "soundcraft-cli info signal_noise_sting.wav"
+ ],
+ "recipe_note": "Build the music project from a list of steps. Set the final loudness and export the file. Then check the file.",
+ "assets": [
+  {
+   "file": "signal_noise_sting.wav",
+   "kind": "audio",
+   "caption": "The 20-second tune gives each month 1 short part, with more notes for a bigger share of the conversation. The data is invented.",
+   "description": "SoundCraft made the music from a list of steps. In the list, a bigger monthly share gives more notes. SoundCraft then mixed the tracks, set the final loudness and exported the file. No sound played during the work.",
+   "made_with_app": true,
+   "how": "soundcraft-cli script sonify.txt --save sonify.scraft (2 subtractive_synth + drum_synth instrument tracks with MIDI notes, 2 aux tracks with signal_generator pink noise and sine, EQ/delay/chorus/reverb/compressor inserts, volume and plugin:a:freq automation, markers, file.bounce_mix); then soundcraft-cli script master.txt --save signal_noise_sting_master.scraft (file.import_audio, eq_7band + compressor + maximizer {threshold:-9, ceiling:-1}, edit.select + edit.fades_create s-curve in / exponential out, file.bounce_mix {format:wav, bit_depth:16, dither:true}). 32 kHz stereo, -14.7 LUFS, peak -1.0 dBFS."
+  },
+  {
+   "file": "signal_noise_sting.flac",
+   "kind": "audio",
+   "caption": "SoundCraft also saved the tune as a smaller FLAC file.",
+   "description": "SoundCraft exported the same mix again as FLAC. A FLAC file keeps the full sound quality in a smaller file.",
+   "made_with_app": true,
+   "hidden": true,
+   "how": "Same master script: file.bounce_mix {format:flac, bit_depth:16, dither:true}"
+  },
+  {
+   "file": "sting_waveform.png",
+   "kind": "image",
+   "caption": "The picture shows the sound wave of the tune. Each month's share of the conversation is under its part of the tune.",
+   "description": "A short Python script drew this picture from the exported sound file. SoundCraft has no command that saves a picture of the sound wave.",
+   "made_with_app": false,
+   "how": "Python + PIL read signal_noise_sting.wav and drew peak and RMS per pixel column, with labels from summary.json."
+  },
+  {
+   "file": "sonify.scraft",
+   "kind": "project",
+   "caption": "The SoundCraft project of the music holds the instrument tracks, notes, effects and volume changes.",
+   "description": "SoundCraft saved this project after it did the list of steps. Open it to see every track, note and effect.",
+   "made_with_app": true,
+   "how": "soundcraft-cli script sonify.txt --save sonify.scraft"
+  },
+  {
+   "file": "sonify_commands.txt",
+   "kind": "document",
+   "caption": "This list holds the steps that build the music project, 1 step per line.",
+   "description": "A small Python program wrote this list from the monthly shares in summary.json. SoundCraft did the steps in order.",
+   "made_with_app": false,
+   "hidden": true,
+   "how": "gen_script.py writes one `command JSON` line per step (notes per bar = round(share% / 2)); soundcraft-cli script runs it."
+  }
+ ],
+ "headless_notes": "All work used soundcraft-cli script, run and info. No window opened and no sound played. MIDI uses 960 ticks per quarter note. Synth settings cannot change from the command line, so insert effects shape the default synth sound. Bounce paths must be Windows paths (A:/...). Exports are WAV, AIFF or FLAC; there is no MP3. Python checked the level of each 2-second part; nobody played the audio."
+}

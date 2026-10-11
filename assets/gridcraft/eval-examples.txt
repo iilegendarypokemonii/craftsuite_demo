@@ -1,0 +1,13 @@
+$ gridcraft-cli eval '=TEXT(COUNTIFS(Posts!F2:F388,"Prices & tokens",Posts!G2:G388,"negative")/COUNTIF(Posts!F2:F388,"Prices & tokens"),"0%")&" of Prices & tokens posts are negative"' --in signal-noise-2026.xlsx
+53% of Prices & tokens posts are negative
+
+$ gridcraft-cli eval '="Agentic coding: "&TEXT(Summary!B6,"0%")&" → "&TEXT(Summary!B14,"0%")&" of the conversation (Jan → Sep)"' --in signal-noise-2026.xlsx
+Agentic coding: 9% → 20% of the conversation (Jan → Sep)
+
+$ gridcraft-cli eval '="Reasoning & test-time compute: "&TEXT(Summary!D6,"0%")&" → "&TEXT(Summary!D14,"0%")&" of the conversation"' --in signal-noise-2026.xlsx
+Reasoning & test-time compute: 18% → 6% of the conversation
+
+$ gridcraft-cli eval '=TEXT(COUNTIF(Posts!G2:G388,"negative")/COUNTA(Posts!G2:G388),"0%")&" of all posts in the sample are negative"' --in signal-noise-2026.xlsx
+23% of all posts in the sample are negative
+
+(Illustrative, synthetic data: a hand-coded sample of 387 fictional posts.)

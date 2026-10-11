@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="720" height="450" viewBox="0 0 720 450">
+  <title>share-by-month</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M0 0 L720 0 L720 450 L0 450 Z" fill="#f7f4ee"/>
+    <path d="M0 0 L8 0 L8 450 L0 450 Z" fill="#ff6b4a"/>
+    <text transform="matrix(1 0 0 1 36 44)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="24" font-weight="bold" fill="#1b1f3b"><tspan x="0" y="0">Agentic coding doubled its share of the conversation</tspan></text>
+    <text transform="matrix(1 0 0 1 36 66)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="12" fill="#8a8fa3"><tspan x="0" y="0">Share of the conversation per theme and month (%), Jan–Sep 2026</tspan></text>
+    <text transform="matrix(1 0 0 1 36 434)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="8.5" fill="#8a8fa3"><tspan x="0" y="0">Signal &amp; Noise 2026 · Northbank Media Lab · hand-coded sample of 387 posts · illustrative, synthetic data</tspan></text>
+    <g id="Line_Graph" data-name="Line Graph">
+      <g id="Axes">
+        <text transform="matrix(1 0 0 1 60 395.15)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="10.5" fill="#1b1f3b" text-anchor="end"><tspan x="0" y="0">0%</tspan></text>
+        <path d="M66 333.6 L516 333.6" fill="none" stroke="#dad5cb" stroke-width="0.5" stroke-miterlimit="10"/>
+        <text transform="matrix(1 0 0 1 60 336.75)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="10.5" fill="#1b1f3b" text-anchor="end"><tspan x="0" y="0">5%</tspan></text>
+        <path d="M66 275.2 L516 275.2" fill="none" stroke="#dad5cb" stroke-width="0.5" stroke-miterlimit="10"/>
+        <text transform="matrix(1 0 0 1 60 278.35)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="10.5" fill="#1b1f3b" text-anchor="end"><tspan x="0" y="0">10%</tspan></text>
+        <path d="M66 216.8 L516 216.8" fill="none" stroke="#dad5cb" stroke-width="0.5" stroke-miterlimit="10"/>
+        <text transform="matrix(1 0 0 1 60 219.95)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="10.5" fill="#1b1f3b" text-anchor="end"><tspan x="0" y="0">15%</tspan></text>
+        <path d="M66 158.4 L516 158.4" fill="none" stroke="#dad5cb" stroke-width="0.5" stroke-miterlimit="10"/>
+        <text transform="matrix(1 0 0 1 60 161.55)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="10.5" fill="#1b1f3b" text-anchor="end"><tspan x="0" y="0">20%</tspan></text>
+        <path d="M66 100 L516 100" fill="none" stroke="#dad5cb" stroke-width="0.5" stroke-miterlimit="10"/>
+        <text transform="matrix(1 0 0 1 60 103.15)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="10.5" fill="#1b1f3b" text-anchor="end"><tspan x="0" y="0">25%</tspan></text>
+        <path d="M66 100 L66 392" fill="none" stroke="#dad5cb" stroke-width="0.5" stroke-miterlimit="10"/>
+        <path d="M66 392 L516 392" fill="none" stroke="#dad5cb" stroke-width="0.5" stroke-miterlimit="10"/>
+        <text transform="matrix(1 0 0 1 66 404.6)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="10.5" fill="#1b1f3b" text-anchor="middle"><tspan x="0" y="0">Jan</tspan></text>
+        <text transform="matrix(1 0 0 1 122.25 404.6)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="10.5" fill="#1b1f3b" text-anchor="middle"><tspan x="0" y="0">Feb</tspan></text>
+        <text transform="matrix(1 0 0 1 178.5 404.6)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="10.5" fill="#1b1f3b" text-anchor="middle"><tspan x="0" y="0">Mar</tspan></text>
+        <text transform="matrix(1 0 0 1 234.75 404.6)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="10.5" fill="#1b1f3b" text-anchor="middle"><tspan x="0" y="0">Apr</tspan></text>
+        <text transform="matrix(1 0 0 1 291 404.6)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="10.5" fill="#1b1f3b" text-anchor="middle"><tspan x="0" y="0">May</tspan></text>
+        <text transform="matrix(1 0 0 1 347.25 404.6)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="10.5" fill="#1b1f3b" text-anchor="middle"><tspan x="0" y="0">Jun</tspan></text>
+        <text transform="matrix(1 0 0 1 403.5 404.6)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="10.5" fill="#1b1f3b" text-anchor="middle"><tspan x="0" y="0">Jul</tspan></text>
+        <text transform="matrix(1 0 0 1 459.75 404.6)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="10.5" fill="#1b1f3b" text-anchor="middle"><tspan x="0" y="0">Aug</tspan></text>
+        <text transform="matrix(1 0 0 1 516 404.6)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="10.5" fill="#1b1f3b" text-anchor="middle"><tspan x="0" y="0">Sep</tspan></text>
+      </g>
+      <g id="Open-weight_models" data-name="Open-weight models">
+        <path d="M66 250.672 L122.25 262.352 L178.5 237.824 L234.75 216.8 L291 233.152 L347.25 264.688 L403.5 251.84 L459.75 251.84 L516 251.84" fill="none" stroke="#cfcbd9" stroke-width="1.5" stroke-miterlimit="10"/>
+      </g>
+      <g id="Prices___tokens" data-name="Prices &amp; tokens">
+        <path d="M66 250.672 L122.25 262.352 L178.5 269.36 L234.75 275.2 L291 285.712 L347.25 290.384 L403.5 298.56 L459.75 298.56 L516 298.56" fill="none" stroke="#cfcbd9" stroke-width="1.5" stroke-miterlimit="10"/>
+      </g>
+      <g id="On-device_AI" data-name="On-device AI">
+        <path d="M66 320.752 L122.25 326.592 L178.5 330.096 L234.75 333.6 L291 312.576 L347.25 290.384 L403.5 298.56 L459.75 298.56 L516 298.56" fill="none" stroke="#cfcbd9" stroke-width="1.5" stroke-miterlimit="10"/>
+      </g>
+      <g id="Regulation___policy" data-name="Regulation &amp; policy">
+        <path d="M66 320.752 L122.25 326.592 L178.5 299.728 L234.75 304.4 L291 285.712 L347.25 290.384 L403.5 251.84 L459.75 298.56 L516 298.56" fill="none" stroke="#cfcbd9" stroke-width="1.5" stroke-miterlimit="10"/>
+      </g>
+      <g id="Benchmarks___evals" data-name="Benchmarks &amp; evals">
+        <path d="M66 250.672 L122.25 262.352 L178.5 269.36 L234.75 275.2 L291 285.712 L347.25 316.08 L403.5 321.92 L459.75 321.92 L516 321.92" fill="none" stroke="#cfcbd9" stroke-width="1.5" stroke-miterlimit="10"/>
+      </g>
+      <g id="Compute___energy" data-name="Compute &amp; energy">
+        <path d="M66 285.712 L122.25 262.352 L178.5 269.36 L234.75 275.2 L291 285.712 L347.25 264.688 L403.5 275.2 L459.75 251.84 L516 251.84" fill="none" stroke="#cfcbd9" stroke-width="1.5" stroke-miterlimit="10"/>
+      </g>
+      <g id="Multimodal___voice" data-name="Multimodal &amp; voice">
+        <path d="M66 285.712 L122.25 262.352 L178.5 269.36 L234.75 275.2 L291 258.848 L347.25 264.688 L403.5 251.84 L459.75 251.84 L516 251.84" fill="none" stroke="#cfcbd9" stroke-width="1.5" stroke-miterlimit="10"/>
+      </g>
+      <g id="Safety___trust" data-name="Safety &amp; trust">
+        <path d="M66 320.752 L122.25 326.592 L178.5 299.728 L234.75 304.4 L291 285.712 L347.25 290.384 L403.5 298.56 L459.75 298.56 L516 298.56" fill="none" stroke="#cfcbd9" stroke-width="1.5" stroke-miterlimit="10"/>
+      </g>
+      <g id="Reasoning___test-time_compute" data-name="Reasoning &amp; test-time compute">
+        <path d="M66 179.424 L122.25 196.944 L178.5 237.824 L234.75 275.2 L291 285.712 L347.25 290.384 L403.5 298.56 L459.75 298.56 L516 321.92" fill="none" stroke="#7a5cfa" stroke-width="3.5" stroke-miterlimit="10"/>
+      </g>
+      <g id="Agentic_coding" data-name="Agentic coding">
+        <path d="M66 285.712 L122.25 262.352 L178.5 269.36 L234.75 216.8 L291 233.152 L347.25 188.768 L403.5 205.12 L459.75 181.76 L516 158.4" fill="none" stroke="#ff6b4a" stroke-width="3.5" stroke-miterlimit="10"/>
+      </g>
+    </g>
+    <path d="M61.5 285.712 C61.5 283.227 63.515 281.212 66 281.212 C68.485 281.212 70.5 283.227 70.5 285.712 C70.5 288.197 68.485 290.212 66 290.212 C63.515 290.212 61.5 288.197 61.5 285.712 Z" fill="#ff6b4a" stroke="#f7f4ee" stroke-width="1.5" stroke-miterlimit="10"/>
+    <path d="M511.5 158.4 C511.5 155.915 513.515 153.9 516 153.9 C518.485 153.9 520.5 155.915 520.5 158.4 C520.5 160.885 518.485 162.9 516 162.9 C513.515 162.9 511.5 160.885 511.5 158.4 Z" fill="#ff6b4a" stroke="#f7f4ee" stroke-width="1.5" stroke-miterlimit="10"/>
+    <path d="M61.5 179.424 C61.5 176.939 63.515 174.924 66 174.924 C68.485 174.924 70.5 176.939 70.5 179.424 C70.5 181.909 68.485 183.924 66 183.924 C63.515 183.924 61.5 181.909 61.5 179.424 Z" fill="#7a5cfa" stroke="#f7f4ee" stroke-width="1.5" stroke-miterlimit="10"/>
+    <path d="M511.5 321.92 C511.5 319.435 513.515 317.42 516 317.42 C518.485 317.42 520.5 319.435 520.5 321.92 C520.5 324.405 518.485 326.42 516 326.42 C513.515 326.42 511.5 324.405 511.5 321.92 Z" fill="#7a5cfa" stroke="#f7f4ee" stroke-width="1.5" stroke-miterlimit="10"/>
+    <text transform="matrix(1 0 0 1 74 301.712)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="13" font-weight="bold" fill="#ff6b4a"><tspan x="0" y="0">9%</tspan></text>
+    <text transform="matrix(1 0 0 1 74 170.424)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="13" font-weight="bold" fill="#7a5cfa"><tspan x="0" y="0">18%</tspan></text>
+    <text transform="matrix(1 0 0 1 526 163.4)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="16" font-weight="bold" fill="#ff6b4a"><tspan x="0" y="0">20%</tspan></text>
+    <text transform="matrix(1 0 0 1 564 162.4)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="12" font-weight="bold" fill="#ff6b4a"><tspan x="0" y="0">Agentic coding</tspan></text>
+    <text transform="matrix(1 0 0 1 526 326.92)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="16" font-weight="bold" fill="#7a5cfa"><tspan x="0" y="0">6%</tspan></text>
+    <text transform="matrix(1 0 0 1 556 319.92)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="12" font-weight="bold" fill="#7a5cfa"><tspan x="0" y="0">Reasoning &amp;</tspan></text>
+    <text transform="matrix(1 0 0 1 556 333.92)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="12" font-weight="bold" fill="#7a5cfa"><tspan x="0" y="0">test-time compute</tspan></text>
+    <text transform="matrix(1 0 0 1 526 275.696)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="11" font-weight="500" fill="#8a8fa3"><tspan x="0" y="0">8 other themes</tspan></text>
+  </g>
+</svg>

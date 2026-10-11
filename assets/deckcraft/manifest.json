@@ -1,0 +1,108 @@
+{
+ "app": "DeckCraft",
+ "summary": "DeckCraft is a presentation app, like Microsoft PowerPoint or Apple Keynote. You make slides with text, pictures and charts. You can save the slides as a PowerPoint file.",
+ "use_cases": [
+  "Make a short deck for a team meeting from a list of results.",
+  "Show survey results in a chart that you can edit later.",
+  "Make a new version of the same deck every month with new numbers.",
+  "Send a .pptx file to colleagues who use PowerPoint."
+ ],
+ "story": "DeckCraft made a 7-slide deck about the study. The slides show the method, 3 findings, the main takeaway and a note about the invented data. VectorCraft made the 3 charts on slides 2, 3 and 4. DeckCraft drew the chart on slide 5 itself. The deck has transitions between slides and animations on the slides. It opens in PowerPoint.",
+ "recipe": [
+  "deckcraft-cli run --cmd 'slide.new={\"layout\":\"titleOnly\",\"title\":\"Signal & Noise\"}' --save deck.deckcraft",
+  "deckcraft-cli convert deck.deckcraft deck.pptx",
+  "deckcraft-cli render deck.deckcraft --all --scale 1.5 slides/"
+ ],
+ "recipe_note": "Make a slide. Save the deck as a PowerPoint file. Export each slide as a PNG image.",
+ "assets": [
+  {
+   "file": "slide-01.png",
+   "kind": "image",
+   "caption": "Slide 1 shows the title and the badge from VectorCraft.",
+   "description": "DeckCraft put the title, the subtitle and the VectorCraft badge on a dark slide. Then it exported the slide as a PNG image.",
+   "made_with_app": true,
+   "how": "deckcraft-cli run --cmd 'file.new={\"blank\":true,\"size\":[960,540]}' --cmd design.colors --cmd design.fonts --cmd slide.new --cmd design.background --cmd insert.textBox --cmd format.* --cmd shape.insert --cmd insert.picture --cmd insert.chart --cmd animation.add --cmd transition.set ... --save signal-noise-2026.deckcraft (from _work/deckcraft/deck2.py); deckcraft-cli render signal-noise-2026.deckcraft --all --scale 1.5 slides/"
+  },
+  {
+   "file": "slide-02.png",
+   "kind": "image",
+   "caption": "Slide 2 explains the method. In this invented study, a person gives each of 387 posts a theme. The slide reports shares, not counts.",
+   "description": "DeckCraft made this slide with 5 bullet points and the VectorCraft pie chart. Then it exported the slide as a PNG image.",
+   "made_with_app": true,
+   "how": "deckcraft-cli run --cmd 'file.new={\"blank\":true,\"size\":[960,540]}' --cmd design.colors --cmd design.fonts --cmd slide.new --cmd design.background --cmd insert.textBox --cmd format.* --cmd shape.insert --cmd insert.picture --cmd insert.chart --cmd animation.add --cmd transition.set ... --save signal-noise-2026.deckcraft (from _work/deckcraft/deck2.py); deckcraft-cli render signal-noise-2026.deckcraft --all --scale 1.5 slides/"
+  },
+  {
+   "file": "slide-03.png",
+   "kind": "image",
+   "caption": "Slide 3 shows finding 1: Agentic coding grew from 9% to 20% of the conversation.",
+   "description": "DeckCraft put the VectorCraft line chart next to a white box with the key number. Then it exported the slide as a PNG image.",
+   "made_with_app": true,
+   "how": "deckcraft-cli run --cmd 'file.new={\"blank\":true,\"size\":[960,540]}' --cmd design.colors --cmd design.fonts --cmd slide.new --cmd design.background --cmd insert.textBox --cmd format.* --cmd shape.insert --cmd insert.picture --cmd insert.chart --cmd animation.add --cmd transition.set ... --save signal-noise-2026.deckcraft (from _work/deckcraft/deck2.py); deckcraft-cli render signal-noise-2026.deckcraft --all --scale 1.5 slides/"
+  },
+  {
+   "file": "slide-04.png",
+   "kind": "image",
+   "caption": "Slide 4 shows finding 2: 53% of Prices & tokens posts were negative. The average is 23%.",
+   "description": "DeckCraft put the VectorCraft bar chart next to a coral box with the key number. Then it exported the slide as a PNG image.",
+   "made_with_app": true,
+   "how": "deckcraft-cli run --cmd 'file.new={\"blank\":true,\"size\":[960,540]}' --cmd design.colors --cmd design.fonts --cmd slide.new --cmd design.background --cmd insert.textBox --cmd format.* --cmd shape.insert --cmd insert.picture --cmd insert.chart --cmd animation.add --cmd transition.set ... --save signal-noise-2026.deckcraft (from _work/deckcraft/deck2.py); deckcraft-cli render signal-noise-2026.deckcraft --all --scale 1.5 slides/"
+  },
+  {
+   "file": "slide-05.png",
+   "kind": "image",
+   "caption": "Slide 5 shows finding 3: Reasoning & test-time compute fell from 18% to 6% of the conversation.",
+   "description": "DeckCraft drew this column chart itself, in the study colours. Then it exported the slide as a PNG image.",
+   "made_with_app": true,
+   "how": "deckcraft-cli run --cmd 'file.new={\"blank\":true,\"size\":[960,540]}' --cmd design.colors --cmd design.fonts --cmd slide.new --cmd design.background --cmd insert.textBox --cmd format.* --cmd shape.insert --cmd insert.picture --cmd insert.chart --cmd animation.add --cmd transition.set ... --save signal-noise-2026.deckcraft (from _work/deckcraft/deck2.py); deckcraft-cli render signal-noise-2026.deckcraft --all --scale 1.5 slides/"
+  },
+  {
+   "file": "slide-06.png",
+   "kind": "image",
+   "caption": "Slide 6 gives the takeaway: the conversation moved from what AI models think to what they do and cost.",
+   "description": "DeckCraft made this slide with 1 large statement and 3 short points. Then it exported the slide as a PNG image.",
+   "made_with_app": true,
+   "how": "deckcraft-cli run --cmd 'file.new={\"blank\":true,\"size\":[960,540]}' --cmd design.colors --cmd design.fonts --cmd slide.new --cmd design.background --cmd insert.textBox --cmd format.* --cmd shape.insert --cmd insert.picture --cmd insert.chart --cmd animation.add --cmd transition.set ... --save signal-noise-2026.deckcraft (from _work/deckcraft/deck2.py); deckcraft-cli render signal-noise-2026.deckcraft --all --scale 1.5 slides/"
+  },
+  {
+   "file": "slide-07.png",
+   "kind": "image",
+   "caption": "Slide 7 explains that all posts in the data are invented.",
+   "description": "DeckCraft made this slide with 5 bullet points and a small badge. Then it exported the slide as a PNG image.",
+   "made_with_app": true,
+   "how": "deckcraft-cli run --cmd 'file.new={\"blank\":true,\"size\":[960,540]}' --cmd design.colors --cmd design.fonts --cmd slide.new --cmd design.background --cmd insert.textBox --cmd format.* --cmd shape.insert --cmd insert.picture --cmd insert.chart --cmd animation.add --cmd transition.set ... --save signal-noise-2026.deckcraft (from _work/deckcraft/deck2.py); deckcraft-cli render signal-noise-2026.deckcraft --all --scale 1.5 slides/"
+  },
+  {
+   "file": "signal-noise-2026.pptx",
+   "kind": "project",
+   "caption": "The PowerPoint file keeps the transitions and the animations.",
+   "description": "DeckCraft saved the deck as a PowerPoint file. The transitions between slides and the animations stay in the file.",
+   "made_with_app": true,
+   "how": "deckcraft-cli convert signal-noise-2026.deckcraft signal-noise-2026.pptx (check: the slide XML has p:transition and p:timing)"
+  },
+  {
+   "file": "signal-noise-2026.deckcraft",
+   "kind": "project",
+   "caption": "This is the editable DeckCraft file.",
+   "description": "Open the file to change the slides or the chart numbers.",
+   "made_with_app": true,
+   "how": "deckcraft-cli run ... --save signal-noise-2026.deckcraft"
+  },
+  {
+   "file": "signal-noise-2026.pdf",
+   "kind": "document",
+   "caption": "The PDF file holds all 7 slides.",
+   "description": "DeckCraft exported all 7 slides to 1 PDF, with 1 slide on each page.",
+   "made_with_app": true,
+   "how": "deckcraft-cli run --in signal-noise-2026.deckcraft --cmd 'file.export={\"path\":\"signal-noise-2026.pdf\",\"format\":\"pdf\"}'"
+  },
+  {
+   "file": "signal-noise-2026-slideshow.gif",
+   "kind": "gif",
+   "caption": "The animated slideshow shows the 7 slides, about 3 seconds per slide.",
+   "description": "A short Python script joined the 7 slide images from DeckCraft into 1 animated GIF. The same Python script made the short fades between the GIF images, not DeckCraft.",
+   "made_with_app": false,
+   "how": "Python/PIL (_work/deckcraft/gif.py): slide PNGs from deckcraft-cli render --all, 5 blend frames between slides, 128 colours. DeckCraft has no video or GIF export."
+  }
+ ],
+ "headless_notes": "run, render and convert worked without a window. run has no references to earlier results, but a new object stays selected, so the next format command changes it. run writes only the last --save, so convert made the .pptx file. design.colors set the study colours, so the native chart uses them. The transitions and animations stay in the .pptx file. DeckCraft cannot render them to video or GIF, so a Python script made the GIF from the slide images. The PDF is about 2 MB because it contains the slide pictures at full size."
+}
